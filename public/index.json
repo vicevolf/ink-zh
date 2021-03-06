@@ -1,10 +1,10 @@
 [
 {
 	"uri": "http://example.org/",
-	"title": "主页",
+	"title": "欢迎",
 	"tags": [],
 	"description": "",
-	"content": "ink.magicoder.org Inky 中文指南 创作 互动小说 / 文字冒险游戏 像写 Markdown 一样容易！\n这是什么 - 获取 Inky - 快速上手\n"
+	"content": "ink.magicoder.org Inky 中文指南 创作 互动小说 / 文字冒险游戏 像写 Markdown 一样容易！\nInk, Inky, 以及 Ink-unity 是 inkle 以 MIT 协议开源的\n\r\r这是什么\r\r\r获取 Inky\r\r\r快速上手\r\r"
 },
 {
 	"uri": "http://example.org/first/",
