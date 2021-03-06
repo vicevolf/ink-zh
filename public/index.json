@@ -1,17 +1,45 @@
 [
 {
-	"uri": "http://example.org/basics/",
+	"uri": "http://example.org/",
+	"title": "主页",
+	"tags": [],
+	"description": "",
+	"content": "ink.magicoder.org Inky 中文指南 创作 互动小说 / 文字冒险游戏 像写 Markdown 一样容易！\n这是什么 - 获取 Inky - 快速上手\n"
+},
+{
+	"uri": "http://example.org/first/",
 	"title": "欢迎回来",
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
 },
 {
-	"uri": "http://example.org/",
-	"title": "My New Hugo Site",
+	"uri": "http://example.org/first/first-content/",
+	"title": "测试",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "有什么呢？\n"
+},
+{
+	"uri": "http://example.org/second/",
+	"title": "快速上手",
+	"tags": [],
+	"description": "",
+	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
+	"uri": "http://example.org/third/",
+	"title": "中文文档",
+	"tags": [],
+	"description": "",
+	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
+	"uri": "http://example.org/fourth/",
+	"title": "资源索引",
+	"tags": [],
+	"description": "",
+	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
 },
 {
 	"uri": "http://example.org/categories/",

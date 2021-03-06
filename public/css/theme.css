@@ -39,7 +39,7 @@
     src: url("../fonts/Work_Sans_500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans_500.woff") format("woff"), url("../fonts/Work_Sans_500.woff2") format("woff2"), url("../fonts/Work_Sans_500.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_500.ttf") format("truetype");
 }
 body {
-    background: #fff;
+    background: #fffefa;
     color: #777;
 }
 body #chapter h1 {
@@ -70,7 +70,7 @@ pre {
     border: 1px solid #eaeaea;
 }
 b, strong, label, th {
-    font-weight: 600;
+    font-weight: 700;
 }
 .default-animation, #header #logo-svg, #header #logo-svg path, #sidebar, #sidebar ul, #body, #body .padding, #body .nav {
     -webkit-transition: all 0.5s ease;
@@ -427,13 +427,13 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     max-width: 80%;
 }
 #chapter h3 {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Noto Sans SC", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
     text-align: center;
 }
 #chapter h1 {
     font-size: 5rem;
-    border-bottom: 4px solid #F0F2F4;
+    border-bottom: 4px solid #eaeaea;
 }
 #chapter p {
     text-align: center;
@@ -448,27 +448,27 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin: 0;
 }
 body {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Noto Sans SC", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1.6;
     font-size: 18px !important;
 }
 h2, h3, h4, h5, h6 {
-    font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Noto Sans SC", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
     color: #5e5e5e;
     font-weight: 400;
     letter-spacing: -1px;
 }
 h1 {
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Noto Sans SC", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
     text-transform: uppercase;
     color: #222;
     font-weight: 200;
 }
 blockquote {
-    border-left: 10px solid #F0F2F4;
+    border-left: 10px solid #eaeaea;
 }
 blockquote p {
     font-size: 1.1rem;
@@ -661,7 +661,7 @@ pre code {
     font-size: 15px;
 }
 hr {
-    border-bottom: 4px solid #F0F2F4;
+    border-bottom: 4px solid #eaeaea;
 }
 .page-title {
     margin-top: -25px;
