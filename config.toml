@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
-languageCode = "zh"
-title = "My New Hugo Site"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "Inky 中文指南 - 编程魔法师"
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 # For search functionality
@@ -45,7 +46,29 @@ home = [ "HTML", "RSS", "JSON"]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "ink"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
-  custom_css = ["css/foo.css", "css/bar.css"]
+  custom_css = [""]
   # Change the title separator. Default to "::".
   titleSeparator = "-"
+
+[[menu.shortcuts]] 
+  name = "<i class='fas fa-download'></i> 获取 Inky"
+  identifier = "github"
+  url = "https://github.com/inkle/inky/releases"
+  weight = 10
+
+[[menu.shortcuts]]
+  name = "<i class='fas fa-bookmark'></i> 官方文档"
+  url = "https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md"
+  weight = 11
+
+[[menu.shortcuts]]
+  name = "<i class='fas fa-fire'></i> Indienova"
+  url = "/showcase"
+  weight = 12
+
+[[menu.shortcuts]]
+  name = "<i class='fas fa-ring fa-spin'></i> 打赏作者"
+  url = "/credits"
+  weight = 20
+
 
