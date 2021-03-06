@@ -63,12 +63,12 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
   name = "<i class='fas fa-fire'></i> Indienova"
-  url = "/showcase"
+  url = "https://indienova.com"
   weight = 12
 
 [[menu.shortcuts]]
   name = "<i class='fas fa-ring fa-spin'></i> 打赏作者"
-  url = "/credits"
+  url = "https://afdian.net/@volfclub"
   weight = 20
 
 
