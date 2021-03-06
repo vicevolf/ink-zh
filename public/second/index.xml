@@ -7,5 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 06 Mar 2021 15:09:55 +0800</lastBuildDate><atom:link href="http://example.org/second/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>获取 Inky</title>
+      <link>http://example.org/second/get-inky/</link>
+      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>http://example.org/second/get-inky/</guid>
+      <description>我们要用 Ink 语言的官方编辑器 Inky 进行创作，这只需简单的3步：
+ 下载最新版 Inky，支持 Windows，macOS，Linux ； 解压下载好的压缩包到合适的位置； 以 Windows 为例，双击运行 Inky.exe 。  你会发现，Inky 直接启动就绪了 —— 是款免安装的“绿色软件”，这也是为什么本节标题不叫“安装 Inky”的原因。
+🔎 展示 Inky 界面… Inky 是左右双栏的编辑器，在左栏编辑攥写，在右栏实时预览。此时 Inky 在左栏已预置了些内容（虽然不是 Hello World），你可以随意编辑试试写写看；并点击右栏里的预览看看会发生什么。
+🔎 展示预置内容…Once upon a time... * There were two choices. * There were four lines of content. - They lived happily ever after. -&amp;gt; END 曾几何时… * 有两个选择。 * 有四行内容。 - 从此他们过着幸福的生活。 -&amp;gt; END //剧终   ⏭ 下一节我们会来认识下 Inky 编辑器的基础功能。</description>
+    </item>
+    
   </channel>
 </rss>
