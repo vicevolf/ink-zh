@@ -17,5 +17,9 @@ chapter = true
 {{% button href="https://github.com/inkle/inky/releases" icon="fas fa-download" %}}获取 Inky{{% /button %}}
 {{% button href="/second" icon="fas fa-magic" %}}快速上手{{% /button %}}
 
-
 ![hello](/images/hello.jpg)
+
+{{% button href="https://coderadio.freecodecamp.org" icon="fas fa-coffee" %}}Code Radio{{% /button %}}
+{{% button href="/second" icon="fas fa-ring fa-spin" %}}支持我们{{% /button %}}
+
+

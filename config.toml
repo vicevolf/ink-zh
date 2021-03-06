@@ -66,7 +66,7 @@ home = [ "HTML", "RSS", "JSON"]
   weight = 19
 
 [[menu.shortcuts]]
-  name = "<i class='fas fa-ring fa-spin'></i> 打赏作者"
+  name = "<i class='fas fa-ring fa-spin'></i> 支持我们"
   url = "https://afdian.net/@volfclub"
   weight = 20
 
