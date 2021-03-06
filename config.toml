@@ -50,12 +50,6 @@ home = [ "HTML", "RSS", "JSON"]
   # Change the title separator. Default to "::".
   titleSeparator = "-"
 
-[[menu.shortcuts]] 
-  name = "<i class='fas fa-download'></i> 获取 Inky"
-  identifier = "github"
-  url = "https://github.com/inkle/inky/releases"
-  weight = 10
-
 [[menu.shortcuts]]
   name = "<i class='fas fa-bookmark'></i> 官方文档"
   url = "https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md"
@@ -65,6 +59,11 @@ home = [ "HTML", "RSS", "JSON"]
   name = "<i class='fas fa-fire'></i> Indienova"
   url = "https://indienova.com"
   weight = 12
+
+[[menu.shortcuts]]
+  name = "<i class='fas fa-question-circle'></i> 反馈问题"
+  url = "https://github.com/volfclub/ink-zh/issues"
+  weight = 19
 
 [[menu.shortcuts]]
   name = "<i class='fas fa-ring fa-spin'></i> 打赏作者"
