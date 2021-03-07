@@ -195,7 +195,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     border-bottom: 1px solid #2a232f;
 }
 #sidebar a.padding {
-    padding: 0 1rem;
+    padding: 0 1.4rem;
 }
 #sidebar h5 {
     margin: 2rem 0 0;
