@@ -8,7 +8,7 @@ pre = "<b>2. </b>"
 
 这一节其实没啥好讲的，因为 Inky 编辑器太简洁了。让我们从上向下，再从左到右来看看它：
 
-![inky](/images/learn/inky.jpg)
+![inky](/images/learn/inky.png)
 
 {{% notice info %}}
 本页面介绍的 Inky 版本是 V0.12
@@ -17,7 +17,7 @@ pre = "<b>2. </b>"
 
 ## 菜单栏
 
-![inky](/images/learn/inky1.jpg)
+![inky](/images/learn/inky1.png)
 
 这里虽然有7个菜单按钮，一般我们只会用到 **File** 菜单来新建、打开、保存、导出工程。具体用法会在后面用到时细说。
 
@@ -35,7 +35,7 @@ pre = "<b>2. </b>"
 
 让我们先看看，
 
-![inky](/images/learn/inky2.jpg)
+![inky](/images/learn/inky2.png)
 
 - 编辑区↖左上方：三线菜单展开文件浏览；两个左右三角箭头可帮你切换光标的历史位置，这对编辑较长的故事时很有用。
 
@@ -46,6 +46,11 @@ pre = "<b>2. </b>"
 ![inky](/images/learn/inky3.gif)
 
 编辑区**左侧是编辑区**，**右侧是预览区**，当我们在左侧编辑攥写内容时，右侧就能实时预览，并可能游玩体验非常方便。
+
+{{% notice note %}}
+常用快捷键：撤销 = Ctrl+Z ；寻找 = Ctrl+F ，替换 = Ctrl+H ；跳转 = Ctrl+P ；注释 = Ctrl+/ ；多行光标操作 = Ctrl+Alt+↑/↓ ；临时折叠 = Alt+L ；整行移动 = Alt+↑/↓ 。你可在 Edit 菜单中随时查看快捷键用法。
+{{% /notice %}}
+
 
 ## Hello world
 
@@ -97,4 +102,10 @@ Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的�
 
 若你从未接触过编程，左侧编辑区的蓝色字符是否让你有些“望而生畏”？但不要紧张，这实际上是一种类似于 Markdown 的标记语法，非常简单易学，会在后面遇到时教会你。
 
-👉 下一节我们会来认识下 Inky 编辑器的基础功能。
+那么我们的故事像 Hello World 一样“输出”后是什么样的呢？{{% button href="https://ink-demo.magicoder.org" icon="fas fa-paw" %}}查看示例{{% /button %}}
+
+看起来是个普通，可做选择的故事片段网页而已 —— 可以更有趣些吗？
+
+---
+
+👉 下一节我们会开始学习 Ink 语法。

@@ -19,7 +19,7 @@ Ink 是一门讲故事的“编程语言”。
 
 你会发现，Inky 直接启动就绪了 —— 是款免安装的“绿色软件”，这也是为什么本节标题不叫“安装 Inky”的原因。
 
-{{%expand "🔎 展开 Inky 界面…" %}}![inky](/images/learn/inky.jpg){{% /expand%}}
+{{%expand "🔎 展开 Inky 界面…" %}}![inky](/images/learn/inky.png){{% /expand%}}
 
 Inky 是左右双栏的编辑器，在**左栏编辑攥写**，在**右栏实时预览**。此时 Inky 在左栏已预置了些内容（虽然不是 Hello World），你可以随意编辑试试写写看；并点击右栏里的预览看看会发生什么。
 
