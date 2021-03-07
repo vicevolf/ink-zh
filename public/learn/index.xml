@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>欢迎 on Inky 中文指南 - 编程魔法师</title>
-    <link>https://ink.magicoder.org/</link>
-    <description>Recent content in 欢迎 on Inky 中文指南 - 编程魔法师</description>
+    <title>快速上手 on Inky 中文指南 - 编程魔法师</title>
+    <link>https://ink.magicoder.org/learn/</link>
+    <description>Recent content in 快速上手 on Inky 中文指南 - 编程魔法师</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Mar 2021 15:09:55 +0800</lastBuildDate><atom:link href="https://ink.magicoder.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>测试</title>
-      <link>https://ink.magicoder.org/first/first-content/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/first/first-content/</guid>
-      <description>有什么呢？</description>
-    </item>
-    
+    <lastBuildDate>Sat, 06 Mar 2021 15:09:55 +0800</lastBuildDate><atom:link href="https://ink.magicoder.org/learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>获取 Inky</title>
       <link>https://ink.magicoder.org/learn/get-inky/</link>

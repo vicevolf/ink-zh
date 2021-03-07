@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags - Inky 中文指南 - 编程魔法师</title>
+    <title>Inky 编辑器 - Inky 中文指南 - 编程魔法师</title>
 
     
     <link href="/css/nucleus.css?1615109520" rel="stylesheet">
@@ -40,7 +40,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/learn/inky-64/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -143,7 +143,7 @@
   
     
     <li data-nav-id="/learn/" title="快速上手" class="dd-item
-        
+        parent
         
         
         ">
@@ -192,7 +192,7 @@
  
   
     
-      <li data-nav-id="/learn/inky-64/" title="Inky 编辑器" class="dd-item ">
+      <li data-nav-id="/learn/inky-64/" title="Inky 编辑器" class="dd-item active">
         <a href="/learn/inky-64/">
         <b>2. </b>Inky 编辑器
         <i class="fas fa-check read-icon"></i>
@@ -326,6 +326,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/tree/main/content/learn/inky%2064.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">改进文档</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -346,7 +357,13 @@
             
           
           
-            <a href='/'>欢迎</a> > Tags
+            
+            
+          
+          
+            <a href='/'>欢迎</a> > <a href='/learn/'>快速上手</a> > Inky 编辑器
+          
+        
           
         
           
@@ -357,7 +374,13 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#菜单栏">菜单栏</a></li>
+    <li><a href="#编辑区">编辑区</a></li>
+    <li><a href="#hello-world">Hello world</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -373,24 +396,110 @@
           
             <h1>
               
-                tag ::
-              
-              Tags
+              Inky 编辑器
             </h1>
           
 
         
 
 
+<p>这一节其实没啥好讲的，因为 Inky 编辑器太简洁了。让我们从上向下，再从左到右来看看它：</p>
+<p><img src="/images/learn/inky.jpg" alt="inky"></p>
 
+<div class="notices info" ><p>本页面介绍的 Inky 版本是 V0.12</p>
+</div>
 
+<h2 id="菜单栏">菜单栏</h2>
+<p><img src="/images/learn/inky1.jpg" alt="inky"></p>
+<p>这里虽然有7个菜单按钮，一般我们只会用到 <strong>File</strong> 菜单来新建、打开、保存、导出工程。具体用法会在后面用到时细说。</p>
 
-<ul>
-	
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	🔎 展开菜单说明…
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ul>
+<li>File：新建、打开、保存、导出工程等；</li>
+<li>Edit：撤销、重做，剪切、复制、粘贴、全选，快捷键说明；</li>
+<li>View：全屏，主题（明暗），缩放文本；</li>
+<li>Story：【待补充】；</li>
+<li>Ink：输入语法模板；</li>
+<li>Window：控制窗口，开发模式等；</li>
+<li>Help：文档，关于。</li>
 </ul>
 
+    </div>
+</div>
+<h2 id="编辑区">编辑区</h2>
+<p>让我们先看看，</p>
+<p><img src="/images/learn/inky2.jpg" alt="inky"></p>
+<ul>
+<li>
+<p>编辑区↖左上方：三线菜单展开文件浏览；两个左右三角箭头可帮你切换光标的历史位置，这对编辑较长的故事时很有用。</p>
+</li>
+<li>
+<p>编辑区⬆正上方：状态栏，通常用来提醒你编辑器检查到语法错误警告信息（✨ 不要害怕它们，能让实时检测语法错误会很有帮助的；以及 Ink 语法很简单，处理大多数问题也很容易）。</p>
+</li>
+<li>
+<p>编辑区↗右上方：<strong>单箭头是后退</strong>，<strong>双箭头是重启</strong>，这在你预览故事时很有用，比如后退到上一个选择选别的选项试试。</p>
+</li>
+</ul>
+<p><img src="/images/learn/inky3.gif" alt="inky"></p>
+<p>编辑区<strong>左侧是编辑区</strong>，<strong>右侧是预览区</strong>，当我们在左侧编辑攥写内容时，右侧就能实时预览，并可能游玩体验非常方便。</p>
+<h2 id="hello-world">Hello world</h2>
+<p>学习任何一门理性的编程语言似乎都是从输出 Hello World 开始的，但 Inkl 作为一门讲故事的语言要感性得多。因此，下面就给你一个故事片段让你先试试看，把它复制到 Inky 左侧试试看，你可以随意编辑甚至续写这个故事，看看右侧预览区会有什么变化。</p>
+<pre><code>伦敦，1872年
+Phileas Fogg 先生的住所。
 
-<footer class=" footline" >
+-&gt; london
+
+
+=== london === //这是节点
+Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！   
+“领航,” 他喊到。 &quot;我们去环游世界！&quot;
+
++ “环游世界，先生？” 
+    我大吃一惊。
+    
+    -&gt; astonished
+    
++ [点头。] -&gt; nod
+
+
+=== astonished ===
+“你在开玩笑！” 我认真地对他说。“你一定是在和我开玩笑，先生。” 
+“我很认真。” 
+
++ “好吧。”
+
+    -&gt; ending
+
+
+=== nod ===
+我点了点头，但不相信一个字。
+
+-&gt; ending
+
+
+=== ending //这也是节点
+
+
+# CLASS: end
+“我们将在八十天内环游地球。” 他很平静地提出了这个近乎疯狂地计划“我们8:25去巴黎。一小时后。”
+
+-&gt; END
+
+</code></pre><p>若你从未接触过编程，左侧编辑区的蓝色字符是否让你有些“望而生畏”？但不要紧张，这实际上是一种类似于 Markdown 的标记语法，非常简单易学，会在后面遇到时教会你。</p>
+<p>👉 下一节我们会来认识下 Inky 编辑器的基础功能。</p>
+
+
+<footer class="footline">
 	
 </footer>
 
@@ -460,6 +569,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -472,6 +582,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -489,6 +602,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -507,6 +621,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -544,8 +661,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/learn/get-inky/" title="获取 Inky"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/first/" title="欢迎回来" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/third/" title="中文文档" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -570,3 +689,4 @@
 
   </body>
 </html>
+

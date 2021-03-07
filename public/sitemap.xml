@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://ink.magicoder.org/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/first/</loc>
+    <loc>https://ink.magicoder.org/first/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/first/first-content/</loc>
+    <loc>https://ink.magicoder.org/first/first-content/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/second/</loc>
+    <loc>https://ink.magicoder.org/learn/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/third/</loc>
+    <loc>https://ink.magicoder.org/third/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/fourth/</loc>
+    <loc>https://ink.magicoder.org/fourth/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/second/get-inky/</loc>
+    <loc>https://ink.magicoder.org/learn/get-inky/</loc>
     <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://ink.magicoder.org/learn/inky-64/</loc>
+    <lastmod>2021-03-06T15:09:55+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://ink.magicoder.org/categories/</loc>
+  </url><url>
+    <loc>https://ink.magicoder.org/tags/</loc>
   </url>
 </urlset>

@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://ink.magicoder.org/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "Inky 中文指南 - 编程魔法师"
