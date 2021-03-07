@@ -605,7 +605,7 @@ section.attachments.grey .attachments-files {
 }
 
 code, kbd, pre, samp {
-    font-family: "Consolas", menlo, monospace;
+    font-family: "Consolas", menlo, Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
     font-size: 92%;
 }
 code {
@@ -888,7 +888,7 @@ td {
     position: relative;
 }
 .hljs::selection, .hljs span::selection {
-    background: #b7b7b7;
+    background: #b6392b;
 }
 .lightbox-active #body {
     overflow: visible;
