@@ -19,9 +19,6 @@
     <link href="{{"css/theme.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     <link href="{{"css/hugo-theme.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
     {{with .Site.Params.themeVariant}}
     <link href="{{(printf "css/theme-%s.css" .) | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     {{end}}
