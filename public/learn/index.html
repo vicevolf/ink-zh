@@ -12,22 +12,22 @@
     <title>快速上手 - Inky 中文指南 - 编程魔法师</title>
 
     
-    <link href="/css/nucleus.css?1615133079" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1615133079" rel="stylesheet">
-    <link href="/css/hybrid.css?1615133079" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1615133079" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1615133079" rel="stylesheet">
-    <link href="/css/auto-complete.css?1615133079" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1615133079" rel="stylesheet">
-    <link href="/css/theme.css?1615133079" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1615133079" rel="stylesheet">
+    <link href="/css/nucleus.css?1615222284" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1615222284" rel="stylesheet">
+    <link href="/css/hybrid.css?1615222284" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1615222284" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1615222284" rel="stylesheet">
+    <link href="/css/auto-complete.css?1615222284" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1615222284" rel="stylesheet">
+    <link href="/css/theme.css?1615222284" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1615222284" rel="stylesheet">
 
     
-    <link href="/css/theme-ink.css?1615133079" rel="stylesheet">
+    <link href="/css/theme-ink.css?1615222284" rel="stylesheet">
     
-    <link href="/?1615133079" rel="stylesheet">
+    <link href="/?1615222284" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1615133079"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1615222284"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -56,14 +56,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1615133079"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1615133079"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1615222284"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1615222284"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ink.magicoder.org\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1615133079"></script>
+<script type="text/javascript" src="/js/search.js?1615222284"></script>
 
     
   </div>
@@ -390,6 +390,7 @@
   <ul>
     <li><a href="#学到什么">学到什么</a></li>
     <li><a href="#需要什么">需要什么</a></li>
+    <li><a href="#能做什么">能做什么</a></li>
   </ul>
 </nav>
     </div>
@@ -422,15 +423,38 @@
 <li>网页专属，让故事更像<strong>互动小说</strong>或<strong>文字冒险游戏</strong>。</li>
 </ul>
 <h2 id="需要什么">需要什么</h2>
+<p>这是为刚到新手村的玩家准备的。</p>
 <ul>
 <li>无需了解编程，有一颗有充满热情的心最佳；</li>
 <li>一台你能用的电脑，用它将你想法“编成”现实。</li>
 </ul>
+<h2 id="能做什么">能做什么</h2>
+<p>以文本为主的互动小说或文字冒险游戏，支持逻辑与变量，插图播放声音。如经典的生命线系列游戏，让读者玩家在海量文本与选择中徘徊，决定故事的走向。</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	🔎 展开 生命线系列…
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <blockquote>
+<p>《生命线 Lifeline》是一款文字冒险游戏。由于飞船坠毁，导致宇航员泰勒（Taylor）被困在这里，而他的同僚不是失踪就是已经阵亡，于是玩家成为他求生的唯一希望。玩家在游戏中会以实时通讯的形式进行游戏，玩家会与泰勒来回发送信息进行沟通，帮助他解决各种难题。并可以选择剧情分支，指引泰勒在这个陌生的星球上进行探险。</p>
+</blockquote>
+<p><img src="/images/learn/lifeline.jpg" alt="inky"></p>
+
+    </div>
+</div>
+<p>但如果你想做的是视觉小说，有大量的立绘与插图，复杂的视觉演出效果，类似于<a href="https://www.66rpg.com">橙光</a>等等。那么本教程可能就不太适合你了，因为<strong>只靠</strong> Ink 很难满足这些需求。推荐你试试看 <a href="https://www.renpy.org">RenPy</a> 这类视觉小说引擎（<code>visual novel engine</code>），更容易实现你的想法。（事实上，<a href="https://github.com/inkle/ink-unity-integration">Ink 可与 Unity 联合</a>，做出更复杂的游戏 —— 不过这超出“快速上手”的范围了，故不再赘述。）</p>
 <blockquote>
 <p>“用最容易的方式创作，用最简单的形式呈现。” —— 似乎有些道理</p>
 </blockquote>
 <hr>
-<p>👉 准备好就进入下一节开始我们的学习吧，在 <code>MAGICODER.ORG</code> 一切教程都是免费的。</p>
+<p>👉 准备好就进入下一节开始我们的学习吧，在 <code>MAGICODER.ORG</code> 一切教程都是免费的。如你觉得本教程有用，不如给你的故事加个有趣的“狼头人” NPC 吧 —— 当然，这是在我们学完教程后的事了。</p>
 
 
 
@@ -623,16 +647,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1615133079"></script>
-    <script src="/js/perfect-scrollbar.min.js?1615133079"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1615133079"></script>
-    <script src="/js/jquery.sticky.js?1615133079"></script>
-    <script src="/js/featherlight.min.js?1615133079"></script>
-    <script src="/js/highlight.pack.js?1615133079"></script>
+    <script src="/js/clipboard.min.js?1615222284"></script>
+    <script src="/js/perfect-scrollbar.min.js?1615222284"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1615222284"></script>
+    <script src="/js/jquery.sticky.js?1615222284"></script>
+    <script src="/js/featherlight.min.js?1615222284"></script>
+    <script src="/js/highlight.pack.js?1615222284"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1615133079"></script>
-    <script src="/js/learn.js?1615133079"></script>
-    <script src="/js/hugo-learn.js?1615133079"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1615222284"></script>
+    <script src="/js/learn.js?1615222284"></script>
+    <script src="/js/hugo-learn.js?1615222284"></script>
     
     
 

@@ -20,6 +20,13 @@ chapter = true
 ![hello](/images/hello.jpg)
 
 {{% button href="https://coderadio.freecodecamp.org" icon="fas fa-coffee" %}}Code Radio{{% /button %}}
-{{% button href="/second" icon="fas fa-ring fa-spin" %}}支持我们{{% /button %}}
+{{% button href="[/second](https://afdian.net/@volfclub)" icon="fas fa-ring fa-spin" %}}支持我们{{% /button %}}
+
+---
+
+#### 📢 **Sponsors**（虚位以待，以下为示例内容）
+
+-  [👨‍🚀 夸克，年轻人更爱用的智能搜索](https://www.myquark.cn)
+-  [支持我们，在这写上你的网址或名字](https://afdian.net/@volfclub)
 
 
