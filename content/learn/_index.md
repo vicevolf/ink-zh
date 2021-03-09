@@ -31,7 +31,7 @@ pre = "<b>🧙 </b>"
 ![inky](/images/learn/lifeline.jpg)
 {{% /expand%}}
 
-但如果你想做的是视觉小说，有大量的立绘与插图，复杂的视觉演出效果，类似于[橙光](https://www.66rpg.com)等等。那么本教程可能就不太适合你了，因为**只靠** Ink 很难满足这些需求。推荐你试试看 [RenPy](https://www.renpy.org) 这类视觉小说引擎（`visual novel engine`），更容易实现你的想法。（事实上，[Ink 可与 Unity 联合](https://github.com/inkle/ink-unity-integration)，做出更复杂的游戏 —— 不过这超出“快速上手”的范围了，故不再赘述。）
+但如果你想做的是视觉小说，有大量的立绘与插图，复杂的视觉演出效果，类似于[橙光](https://www.66rpg.com)等等。那么本教程可能就不太适合你了，因为**只靠** Ink 很难满足这些需求。推荐你试试看 [RenPy](https://www.renpy.org) 这类视觉小说引擎（`visual novel engine`），更容易实现你的想法。（事实上，[Ink 可与 Unity 联合](https://github.com/inkle/ink-unity-integration)，做出更复杂的游戏 —— 不过这已超出“快速上手”的范围了，故不再赘述。）
 
 > “用最容易的方式创作，用最简单的形式呈现。” —— 似乎有些道理
 

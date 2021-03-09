@@ -17,12 +17,12 @@
     </item>
     
     <item>
-      <title>获取 Inky</title>
+      <title>准备 Inky</title>
       <link>https://ink.magicoder.org/learn/get-inky/</link>
       <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
       
       <guid>https://ink.magicoder.org/learn/get-inky/</guid>
-      <description>Ink 是一门讲故事的“编程语言”。
+      <description>获取 Inky Ink 是一门讲故事的“语言”。
 我们要用 Ink 语言的官方编辑器 Inky 进行创作，这只需简单的3步：
  下载最新版 Inky，支持 Windows，macOS，Linux ； 解压下载好的压缩包到合适的位置； 以 Windows 为例，双击运行 Inky.exe 。  你会发现，Inky 直接启动就绪了 —— 是款免安装的“绿色软件”，这也是为什么本节标题不叫“安装 Inky”的原因。
 🔎 展开 Inky 界面… Inky 是左右双栏的编辑器，在左栏编辑攥写，在右栏实时预览。此时 Inky 在左栏已预置了些内容（虽然不是 Hello World），你可以随意编辑试试写写看；并点击右栏里的预览看看会发生什么。
@@ -30,37 +30,37 @@
     </item>
     
     <item>
-      <title>Inky 编辑器</title>
-      <link>https://ink.magicoder.org/learn/inky-64/</link>
+      <title>注释与Todo - Comments&amp;Todo</title>
+      <link>https://ink.magicoder.org/learn/comments-todo/</link>
       <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
       
-      <guid>https://ink.magicoder.org/learn/inky-64/</guid>
-      <description>这一节其实没啥好讲的，因为 Inky 编辑器太简洁了。让我们从上向下，再从左到右来看看它：
-本页面介绍的 Inky 版本是 V0.12
-菜单栏 这里虽然有7个菜单按钮，一般我们只会用到 File 菜单来新建、打开、保存、导出工程。具体用法会在后面用到时细说。
-🔎 展开 菜单说明… File：新建、打开、保存、导出工程等； Edit：撤销、重做，剪切、复制、粘贴、全选，快捷键说明； View：全屏，主题（明暗），缩放文本； Story：【待补充】； Ink：输入语法模板； Window：控制窗口，开发模式等； Help：文档，关于。   编辑区 让我们先看看，
-  编辑区↖左上方：三线菜单展开文件浏览；两个左右三角箭头可帮你切换光标的历史位置，这对编辑较长的故事时很有用。
-  编辑区⬆正上方：状态栏，通常用来提醒你编辑器检查到语法错误警告信息（不要害怕它们，能让实时检测语法错误会很有帮助的；以及 Ink 语法很简单，处理大多数问题也很容易）。
-  编辑区↗右上方：单箭头是后退，双箭头是重启，这在你预览故事时很有用，比如后退到上一个选择选别的选项试试。
-  编辑区左侧是编辑区，右侧是预览区，当我们在左侧编辑攥写内容时，右侧就能实时预览，并可能游玩体验非常方便。
-常用快捷键：撤销 = Ctrl+Z ；寻找 = Ctrl+F ，替换 = Ctrl+H ；跳转 = Ctrl+P ；注释 = Ctrl+/ ；多行光标操作 = Ctrl+Alt+↑/↓ ；临时折叠 = Alt+L ；整行移动 = Alt+↑/↓ 。你可在 Edit 菜单中随时查看快捷键用法。</description>
-    </item>
-    
-    <item>
-      <title>注释 Comments</title>
-      <link>https://ink.magicoder.org/learn/comments/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/learn/comments/</guid>
-      <description>注释 Comments 学编程语法前肯定要先学注释 Comments 的。因为编程是人与机器交流的方式，而注释则是在这过程中，我们与人或自己的交流方式……说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”
-✨ 在 Ink 中，用 // 表示这行后面都是注释，用 /* */ 表示这一段都是注释。方便起见，你也可按 Ctrl+/ 快速注释内容。
+      <guid>https://ink.magicoder.org/learn/comments-todo/</guid>
+      <description>注释 Comments 学编程语法前肯定要先学注释 Comments 的。
+因为编程是人与机器交流的方式，而注释则是在这过程中，我们与人或自己的交流方式……说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”
+✨ 在 Ink 中，用两个斜杠 // 表示这行后面都是注释，用 /* */ 表示这一段都是注释。方便起见，你也可按 Ctrl+/ 快速注释内容。
 “你怎么看？” 她问。 // 一行注释 “我无法评论（comment），” 我答。 /* ……或者一段注释 */ 比如在上一节，我就用注释告诉你“这是节点”。
 === london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 &amp;quot;我们去环游世界！&amp;quot; 也许你会担心，如果把我想的让读者玩家看到了，比如之前说想“写个伏笔”，那怎么办？
 事实上也像我们前面说的，“注释是与人交流的方式”，Inky 作为机器看到你写的 Ink 注释会完全忽略掉。而其他读者看到的是经过 Inky 加工后的网页，自然也不会看到这些注释了。如下图，我们注释的内容都不会出现在预览区。
-✨ 注释不会被 Inky 读取运行，也不要会被其他读者玩家看到。
-Let&amp;rsquo;s Do 👨‍💻 深夜，你独自走在回家的路上。前面的路口好像有什么东西在动… 好像，好像是一头……可怕的， 狼！是狼啊！  深夜独自一人在路上遇到狼真是太吓人了。哼…不能让它得逞吓到更多读者玩家！
- 请你用刚学的注释，让“可怕的，”在 Inky 预览区消失。
-🚧 展开 参考…深夜，你独自走在回家的路上。前面的路口好像有什么东西在动。 好像，好像是一头……//可怕的， 狼！是狼啊！ ✨ 注释在你临时不想让某块代码运行时，也是很有用的。</description>
+✨ 注释不会被 Inky 读取运行，也不会展示给读者玩家。
+你在哪里最常见到双斜杠，网址对吧？如 https://ink.magicoder.org/learn 。为了让你的网址不会一半变成注释，你需要转义字符，将 // 输入为 \/\/ ，例 https:\/\/ink.magicoder.org/learn 。我会在后面用到链接的地方再贴心的提醒一次。
+Let&amp;rsquo;s Do 👨‍💻 深夜，你独自走在回家的路上。前面的路口好像有什么东西在动… 好像，好像是一头……可怕的， 狼！是狼啊！  深夜独自一人在路上遇到狼真是太吓人了。哼…不能让它得逞吓到更多读者玩家！
+ 请你用刚学的注释，让“可怕的，”在 Inky 预览区消失。</description>
+    </item>
+    
+    <item>
+      <title>结点与跳转 - Knots&amp;divert</title>
+      <link>https://ink.magicoder.org/learn/knots-divert/</link>
+      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>https://ink.magicoder.org/learn/knots-divert/</guid>
+      <description>结点 Knots 故事是由一段段剧情组成的，而 Ink 是由一个个结点 Knots 构成的。
+✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
+结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复；结点标记下的内容均属于这个结点。
+例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
+结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
+=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
+🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行黄色的警告？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
+  👉 下一节我们会开始正式学习 Ink 语法。是的，学习 Ink 的核心 —— 结点。</description>
     </item>
     
   </channel>

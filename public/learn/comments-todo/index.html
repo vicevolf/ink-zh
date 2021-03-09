@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>准备 Inky - Inky 中文指南 - 编程魔法师</title>
+    <title>注释与Todo - Comments&amp;Todo - Inky 中文指南 - 编程魔法师</title>
 
     
     <link href="/css/nucleus.css?1615310031" rel="stylesheet">
@@ -37,7 +37,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/learn/get-inky/">
+  <body class="" data-url="/learn/comments-todo/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -168,7 +168,7 @@
  
   
     
-      <li data-nav-id="/learn/get-inky/" title="准备 Inky" class="dd-item active">
+      <li data-nav-id="/learn/get-inky/" title="准备 Inky" class="dd-item ">
         <a href="/learn/get-inky/">
         <b>0. </b>准备 Inky
         <i class="fas fa-check read-icon"></i>
@@ -189,7 +189,7 @@
  
   
     
-      <li data-nav-id="/learn/comments-todo/" title="注释与Todo - Comments&amp;Todo" class="dd-item ">
+      <li data-nav-id="/learn/comments-todo/" title="注释与Todo - Comments&amp;Todo" class="dd-item active">
         <a href="/learn/comments-todo/">
         <b>1. </b>注释与Todo - Comments&amp;Todo
         <i class="fas fa-check read-icon"></i>
@@ -348,7 +348,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/learn/get%20inky.md" target="blank">
+                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/learn/comments%20todo.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">改进文档</span>
                     </a>
@@ -379,7 +379,7 @@
             
           
           
-            <a href='/'>欢迎</a> > <a href='/learn/'>快速上手</a> > 准备 Inky
+            <a href='/'>欢迎</a> > <a href='/learn/'>快速上手</a> > 注释与Todo - Comments&Todo
           
         
           
@@ -394,14 +394,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#获取-inky">获取 Inky</a></li>
-    <li><a href="#认识-inky">认识 Inky</a>
+    <li><a href="#注释-comments">注释 Comments</a>
       <ul>
-        <li><a href="#菜单栏">菜单栏</a></li>
-        <li><a href="#编辑区">编辑区</a></li>
+        <li><a href="#lets-do-">Let&rsquo;s Do 👨‍💻</a></li>
       </ul>
     </li>
-    <li><a href="#hello-world">Hello world</a></li>
+    <li><a href="#todo">Todo</a></li>
   </ul>
 </nav>
     </div>
@@ -419,199 +417,73 @@
           
             <h1>
               
-              准备 Inky
+              注释与Todo - Comments&amp;Todo
             </h1>
           
 
         
 
 
-<h2 id="获取-inky">获取 Inky</h2>
-<p>Ink 是一门讲故事的“语言”。</p>
-<p>我们要用 Ink 语言的官方编辑器 Inky 进行创作，这只需简单的3步：</p>
-<ol>
-<li>
-<a  href="https://github.com/inkle/inky/releases" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-download"></i>
-    
-  
-  下载最新版 Inky
-  
-</a>
- ，支持 Windows，macOS，Linux ；</li>
-<li>解压下载好的压缩包到合适的位置；</li>
-<li>以 Windows 为例，双击运行 <strong>Inky.exe</strong> 。</li>
-</ol>
-<p><img src="/images/learn/logo.png" alt="inky"></p>
-<p>你会发现，Inky 直接启动就绪了 —— 是款免安装的“绿色软件”，这也是为什么本节标题不叫“安装 Inky”的原因。</p>
+<h2 id="注释-comments">注释 Comments</h2>
+<p>学编程语法前肯定要先学<strong>注释</strong> <code>Comments</code> 的。</p>
+<p>因为编程是人与机器交流的方式，而注释则是在这过程中，我们与人或自己的交流方式……说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”</p>
+<p>✨ 在 Ink 中，用两个斜杠 <code>//</code> 表示这行后面都是注释，用 <code>/*   */</code> 表示这一段都是注释。方便起见，你也可按 <strong>Ctrl+/</strong> 快速注释内容。</p>
+<pre><code>“你怎么看？” 她问。
 
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	🔎 展开 Inky 界面…
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <img src="/images/learn/inky.png" alt="inky">
-    </div>
-</div>
-<p>Inky 是左右双栏的编辑器，在<strong>左栏编辑攥写</strong>，在<strong>右栏实时预览</strong>。此时 Inky 在左栏已预置了些内容（虽然不是 Hello World），你可以随意编辑试试写写看；并点击右栏里的预览看看会发生什么。</p>
+// 一行注释
 
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	🔎 展开 预置内容…
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <pre><code>Once upon a time...
+“我无法评论（comment），” 我答。
 
- * There were two choices.
- * There were four lines of content.
-
-- They lived happily ever after.
-    -&gt; END
-</code></pre><pre><code>曾几何时…
-
-* 有两个选择。
-* 有四行内容。
-
-- 从此他们过着幸福的生活。
-    -&gt; END //剧终
-</code></pre>
-    </div>
-</div>
-
-<div class="notices tip" ><p><a href="https://www.zhihu.com/question/276143842">Github 下载慢？</a> / <a href="https://gitee.com/xun-lang/inky/releases">Gitee 镜像</a></p>
-</div>
-
-<hr>
-<h2 id="认识-inky">认识 Inky</h2>
-
-<div class="notices info" ><p>本页面介绍的 Inky 版本是 V0.12</p>
-</div>
-
-<h3 id="菜单栏">菜单栏</h3>
-<p><img src="/images/learn/inky1.png" alt="inky"></p>
-<p>这里虽然有7个菜单按钮，一般我们只会用到 <strong>File</strong> 菜单来新建、打开、保存、导出工程。具体用法会在后面用到时细说。</p>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	🔎 展开 菜单说明…
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <ul>
-<li>File：新建、打开、保存、导出工程等；</li>
-<li>Edit：撤销、重做，剪切、复制、粘贴、全选，快捷键说明；</li>
-<li>View：全屏，主题（明暗），缩放文本；</li>
-<li>Story：【待补充】；</li>
-<li>Ink：输入语法模板；</li>
-<li>Window：控制窗口，开发模式等；</li>
-<li>Help：文档，关于。</li>
-</ul>
-
-    </div>
-</div>
-<h3 id="编辑区">编辑区</h3>
-<p>让我们先看看，</p>
-<p><img src="/images/learn/inky2.png" alt="inky"></p>
-<ul>
-<li>
-<p>编辑区↖左上方：三线菜单展开文件浏览；两个左右三角箭头可帮你切换光标的历史位置，这对编辑较长的故事时很有用。</p>
-</li>
-<li>
-<p>编辑区⬆正上方：状态栏，通常用来提醒你编辑器检查到语法错误警告信息（不要害怕它们，能让实时检测语法错误会很有帮助的；以及 Ink 语法很简单，处理大多数问题也很容易）。</p>
-</li>
-<li>
-<p>编辑区↗右上方：<strong>单箭头是后退</strong>，<strong>双箭头是重启</strong>，这在你预览故事时很有用，比如后退到上一个选择选别的选项试试。</p>
-</li>
-</ul>
-<p><img src="/images/learn/inky3.gif" alt="inky"></p>
-<p>编辑区<strong>左侧是编辑区</strong>，<strong>右侧是预览区</strong>，当我们在左侧编辑攥写内容时，右侧就能实时预览读者玩家看到的内容，并可能游玩体验非常方便。</p>
-
-<div class="notices note" ><p>常用快捷键：撤销 = Ctrl+Z ；寻找 = Ctrl+F ，替换 = Ctrl+H ；跳转 = Ctrl+P ；注释 = Ctrl+/ ；多行光标操作 = Ctrl+Alt+↑/↓ ；临时折叠 = Alt+L ；整行移动 = Alt+↑/↓ 。你可在 Edit 菜单中随时查看快捷键用法。</p>
-</div>
-
-<hr>
-<h2 id="hello-world">Hello world</h2>
-<p>学习任何一门理性的编程语言似乎都是从输出 Hello World 开始的，但 Inkl 作为一门讲故事的语言要感性得多。因此，下面就给你一个故事片段让你先试试看，把它复制到 Inky 左侧试试看，你可以随意编辑甚至续写这个故事，看看右侧预览区会有什么变化。</p>
-<pre><code>伦敦，1872年
-Phileas Fogg 先生的住所。
-
--&gt; london
-
-
-=== london === //这是节点
+/*
+  ……或者一段注释
+*/
+</code></pre><p>比如在上一节，我就用注释告诉你“这是节点”。</p>
+<pre><code>=== london === //这是节点
 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！   
 “领航,” 他喊到。 &quot;我们去环游世界！&quot;
+</code></pre><p>也许你会担心，如果把我想的让读者玩家看到了，比如之前说想“写个伏笔”，那怎么办？</p>
+<p>事实上也像我们前面说的，“注释是与人交流的方式”，Inky 作为机器看到你写的 Ink 注释会完全忽略掉。而其他读者看到的是经过 Inky 加工后的网页，自然也不会看到这些注释了。如下图，我们注释的内容都不会出现在预览区。</p>
+<p>✨ 注释不会被 Inky 读取运行，也不会展示给读者玩家。</p>
+<p><img src="/images/learn/comment.png" alt="comment"></p>
 
-+ “环游世界，先生？” 
-    我大吃一惊。
-    
-    -&gt; astonished
-    
-+ [点头。] -&gt; nod
+<div class="notices warning" ><p>你在哪里最常见到双斜杠，网址对吧？如 <code>https://ink.magicoder.org/learn</code> 。为了让你的网址不会一半变成注释，你需要<a href="https://baike.baidu.com/item/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6">转义字符</a>，将 <code>//</code> 输入为 <code>\/\/</code> ，例 <code>https:\/\/ink.magicoder.org/learn</code> 。我会在后面用到链接的地方再贴心的提醒一次。</p>
+</div>
 
+<h3 id="lets-do-">Let&rsquo;s Do 👨‍💻</h3>
+<pre><code>深夜，你独自走在回家的路上。前面的路口好像有什么东西在动…
+好像，好像是一头……可怕的，
+狼！是狼啊！
+</code></pre><blockquote>
+<p>深夜独自一人在路上遇到狼真是太吓人了。哼…不能让它得逞吓到更多读者玩家！</p>
+</blockquote>
+<p>请你用刚学的注释，让“<strong>可怕的，</strong>”在 Inky 预览区消失。</p>
 
-=== astonished ===
-“你在开玩笑！” 我认真地对他说。“你一定是在和我开玩笑，先生。” 
-“我很认真。” 
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	🚧 展开 参考…
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>深夜，你独自走在回家的路上。前面的路口好像有什么东西在动。
+好像，好像是一头……//可怕的，
+狼！是狼啊！
+</code></pre><p>✨ 注释在你临时不想让某块代码运行时，也是很有用的。</p>
 
-+ “好吧。”
-
-    -&gt; ending
-
-
-=== nod ===
-我点了点头，但不相信一个字。
-
--&gt; ending
-
-
-=== ending //这也是节点
-
-
-# CLASS: end
-“我们将在八十天内环游地球。” 他很平静地提出了这个近乎疯狂地计划“我们8:25去巴黎。一小时后。”
-
--&gt; END
-
-</code></pre><p>若你从未接触过编程，左侧编辑区的蓝色字符是否让你有些“望而生畏”？但不要紧张，这实际上是一种类似于 Markdown 的标记语法，非常简单易学，会在后面遇到时教会你。</p>
-<p>那么我们的故事像 Hello World 一样“输出”后是什么样的呢？
-<a  href="https://ink-demo.magicoder.org" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-paw"></i>
-    
-  
-  查看示例
-  
-</a>
-</p>
-<p>看起来是个普通，可做选择的故事片段网页而已 —— 可以更有趣些吗？</p>
+    </div>
+</div>
+<hr>
+<h2 id="todo">Todo</h2>
+<p>Inky 还有一种更强的提醒方式 <code>TODO: </code> ，能更醒目的提醒你“还要做什么”。如你也有健忘倾向，可多多使用，怎么方便怎么来。</p>
+<p><code>TODO: 认真写这里！</code></p>
+<p><img src="/images/learn/todo.png" alt="todo"></p>
 <hr>
 <hr>
-<p>👉 下一节我们会开始学习 Ink 语法。</p>
+<p>👉 下一节我们开始<strong>正式学习</strong> Ink 语法。是的，会依次学习 Ink 的三大件：结点，跳转，选项。</p>
 
 
 <footer class="footline">
@@ -698,6 +570,25 @@ Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的�
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -717,22 +608,6 @@ Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的�
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -789,10 +664,10 @@ Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的�
 	 
 	 
 		
-			<a class="nav nav-prev" href="/learn/" title="快速上手"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/learn/get-inky/" title="准备 Inky"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/learn/comments-todo/" title="注释与Todo - Comments&amp;Todo" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/learn/knots-divert/" title="结点与跳转 - Knots&amp;divert" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
