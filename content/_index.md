@@ -4,8 +4,7 @@ date = 2021-03-06T15:09:55+08:00
 weight = 5
 chapter = true
 +++
-
-### ink.magicoder.org
+![wellcome](/images/wellcome.png)
 
 # Inky 中文指南
 

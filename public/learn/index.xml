@@ -21,13 +21,13 @@
     </item>
     
     <item>
-      <title>注释与Todo - Comments&amp;Todo</title>
+      <title>注释 Todo</title>
       <link>https://ink.magicoder.org/learn/comments-todo/</link>
       <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
       
       <guid>https://ink.magicoder.org/learn/comments-todo/</guid>
-      <description>注释 Comments 学编程语法前肯定要先学注释 Comments 的。
-因为编程是人与机器交流的方式，而注释则是在这过程中，我们与人或自己的交流方式……说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”
+      <description>注释 Comments 学 Ink 前肯定要先学注释 Comments 的。
+因为注释是人机交流中，我们与人或自己的交流方式…… 说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”
 ✨ 在 Ink 中，用两个斜杠 // 表示这行后面都是注释，用 /* */ 表示这一段都是注释。方便起见，你也可按 Ctrl+/ 快速注释内容。
 “你怎么看？” 她问。 // 一行注释 “我无法评论（comment），” 我答。 /* ……或者一段注释 */ 比如在上一节，我就用注释告诉你“这是节点”。
 === london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 &amp;quot;我们去环游世界！&amp;quot; 也许你会担心，如果把我想的让读者玩家看到了，比如之前说想“写个伏笔”，那怎么办？
@@ -39,19 +39,41 @@
     </item>
     
     <item>
-      <title>结点与跳转 - Knots&amp;divert</title>
+      <title>结点 跳转 ★</title>
       <link>https://ink.magicoder.org/learn/knots-divert/</link>
       <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
       
       <guid>https://ink.magicoder.org/learn/knots-divert/</guid>
-      <description>结点 Knots 故事是由一段段剧情组成的，而 Ink 是由一个个结点 Knots 构成的。
+      <description>结点 Knots 故事是由一段段剧情构成的，而 Ink 是由一个个结点 Knots 组成的。
 ✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
-结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复；结点标记下的内容均属于这个结点。
+结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复。
 例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
+结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。
 结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
 === london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
-🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行黄色的警告？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
-  👉 下一节我们会开始正式学习 Ink 语法。是的，学习 Ink 的核心 —— 结点。</description>
+🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
+ 跳转 Divert 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
+✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
+如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
+    </item>
+    
+    <item>
+      <title>选项 条件 ★</title>
+      <link>https://ink.magicoder.org/learn/choices-conditions/</link>
+      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>https://ink.magicoder.org/learn/choices-conditions/</guid>
+      <description>选项 Choices 故事是由一段段剧情构成的，而 Ink 是由一个个结点 Knots 组成的。
+✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
+结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复。
+例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
+结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。
+结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
+=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
+🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
+ 条件 Conditions 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
+✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
+如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
     </item>
     
   </channel>

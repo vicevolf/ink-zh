@@ -1,12 +1,12 @@
 +++
-title = "结点 跳转 ★"
+title = "选项 条件 ★"
 date = 2021-03-06T15:09:55+08:00
 weight = 14
 chapter = false
-pre = "<b>2. </b>"
+pre = "<b>3. </b>"
 +++
 
-## 结点 Knots
+## 选项 Choices
 
 故事是由一段段剧情构成的，而 Ink 是由一个个**结点** `Knots` 组成的。
 
@@ -34,7 +34,7 @@ Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于
 
 ---
 
-## 跳转 Divert
+## 条件 Conditions
 
 ![divert](/images/learn/divert.png)
 
