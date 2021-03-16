@@ -19,7 +19,7 @@ chapter = true
 ![hello](/images/hello.jpg)
 
 {{% button href="https://coderadio.freecodecamp.org" icon="fas fa-coffee" %}}Code Radio{{% /button %}}
-{{% button href="[/second](https://afdian.net/@volfclub)" icon="fas fa-ring fa-spin" %}}支持我们{{% /button %}}
+{{% button href="https://afdian.net/@volfclub" icon="fas fa-ring fa-spin" %}}支持我们{{% /button %}}
 
 ---
 
