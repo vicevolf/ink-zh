@@ -12,22 +12,22 @@
     <title>跳转 Divert - Inky 中文指南 - 编程魔法师</title>
 
     
-    <link href="/css/nucleus.css?1616337723" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1616337723" rel="stylesheet">
-    <link href="/css/hybrid.css?1616337723" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1616337723" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1616337723" rel="stylesheet">
-    <link href="/css/auto-complete.css?1616337723" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1616337723" rel="stylesheet">
-    <link href="/css/theme.css?1616337723" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1616337723" rel="stylesheet">
+    <link href="/css/nucleus.css?1616341484" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1616341484" rel="stylesheet">
+    <link href="/css/hybrid.css?1616341484" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1616341484" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1616341484" rel="stylesheet">
+    <link href="/css/auto-complete.css?1616341484" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1616341484" rel="stylesheet">
+    <link href="/css/theme.css?1616341484" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1616341484" rel="stylesheet">
 
     
-    <link href="/css/theme-ink.css?1616337723" rel="stylesheet">
+    <link href="/css/theme-ink.css?1616341484" rel="stylesheet">
     
-    <link href="/?1616337723" rel="stylesheet">
+    <link href="/?1616341484" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616337723"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616341484"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -85,14 +85,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1616337723"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1616337723"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1616341484"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1616341484"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ink.magicoder.org\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1616337723"></script>
+<script type="text/javascript" src="/js/search.js?1616341484"></script>
 
     
   </div>
@@ -444,6 +444,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/doc/basics/stitches/" title="针脚 Stitches" class="dd-item ">
+        <a href="/doc/basics/stitches/">
+        <b>1.6 </b>针脚 Stitches
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -635,36 +656,36 @@
 <h2 id="141-结点跳转结点">1.4.1 结点跳转结点</h2>
 <p><strong>Knots divert to knots</strong></p>
 <p>你可以用跳转箭头 -&gt; 告诉故事从一个结点到另一个结点。跳转无需用户输入会立即生效。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> back_in_london <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：回到伦敦
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们晚上九点四十五准时到了伦敦。</span>
-<span style="color:#f92672">-&gt;</span> hurry_home <span style="color:#75715e">// 跳转到结点：赶回家
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">===</span> hurry_home <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶回家
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们尽可能的快赶回了在裁缝街的家。</span>
-</code></pre></div><hr>
+<pre><code>=== back_in_london === // 结点：回到伦敦
+我们晚上九点四十五准时到了伦敦。
+-&gt; hurry_home // 跳转到结点：赶回家
+
+=== hurry_home === // 结点：赶回家
+我们尽可能的快赶回了在裁缝街的家。
+</code></pre><hr>
 <h2 id="142-跳转是无感的">1.4.2 跳转是无感的</h2>
 <p><strong>Diverts are invisible</strong></p>
 <p>跳转是无缝的，甚至可发生在一句话中：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> hurry_home <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶回家
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们赶回了在裁缝街的家</span> <span style="color:#f92672">-&gt;</span> as_fast_as_we_could <span style="color:#75715e">// 跳转到结点：尽可能的快
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">===</span> as_fast_as_we_could <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：尽可能的快
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">尽可能的快。</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">我们赶回在裁缝街的家尽可能的快。
+<pre><code>=== hurry_home === // 结点：赶回家
+我们赶回了在裁缝街的家 -&gt; as_fast_as_we_could // 跳转到结点：尽可能的快
+
+=== as_fast_as_we_could === // 结点：尽可能的快
+尽可能的快。
+</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">我们赶回在裁缝街的家尽可能的快。
 </code></pre></div><hr>
 <h2 id="143-胶水-glue">1.4.3 胶水 Glue</h2>
 <p>通常会在每行新内容之间插入换行符。然而某些情况下，内容必须在同一行，可用胶水 <code>&lt;&gt;</code> 将其连接。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> hurry_home <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶回家
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们赶回</span> <span style="color:#f92672">&lt;&gt;</span><span style="color:#75715e">// 使用胶水
-</span><span style="color:#75715e"></span><span style="color:#f92672">-&gt;</span> to_savile_row <span style="color:#75715e">// 跳转到结点：在裁缝街
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">===</span> to_savile_row <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：在裁缝街
-</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">在裁缝街的家</span>
-<span style="color:#f92672">-&gt;</span> as_fast_as_we_could <span style="color:#75715e">// 跳转到结点：尽可能的快
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">===</span> as_fast_as_we_could <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：尽可能的快
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#960050;background-color:#1e0010">尽可能的快。</span><span style="color:#75715e">// 使用胶水
-</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">我们赶回在裁缝街的家尽可能的快。
+<pre><code>=== hurry_home === // 结点：赶回家
+我们赶回 &lt;&gt;// 使用胶水
+-&gt; to_savile_row // 跳转到结点：在裁缝街
+
+=== to_savile_row === // 结点：在裁缝街
+在裁缝街的家
+-&gt; as_fast_as_we_could // 跳转到结点：尽可能的快
+
+=== as_fast_as_we_could === // 结点：尽可能的快
+&lt;&gt; 尽可能的快。// 使用胶水
+</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">我们赶回在裁缝街的家尽可能的快。
 </code></pre></div><p>你不能用过多的胶水：相邻的多个胶水没有额外的效果。（也没办法解除胶水；一旦粘在同一行，就是粘住了。）</p>
 
 
@@ -930,6 +951,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -974,16 +1011,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1616337723"></script>
-    <script src="/js/perfect-scrollbar.min.js?1616337723"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1616337723"></script>
-    <script src="/js/jquery.sticky.js?1616337723"></script>
-    <script src="/js/featherlight.min.js?1616337723"></script>
-    <script src="/js/highlight.pack.js?1616337723"></script>
+    <script src="/js/clipboard.min.js?1616341484"></script>
+    <script src="/js/perfect-scrollbar.min.js?1616341484"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1616341484"></script>
+    <script src="/js/jquery.sticky.js?1616341484"></script>
+    <script src="/js/featherlight.min.js?1616341484"></script>
+    <script src="/js/highlight.pack.js?1616341484"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1616337723"></script>
-    <script src="/js/learn.js?1616337723"></script>
-    <script src="/js/hugo-learn.js?1616337723"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1616341484"></script>
+    <script src="/js/learn.js?1616341484"></script>
+    <script src="/js/hugo-learn.js?1616341484"></script>
     
     
   </body>

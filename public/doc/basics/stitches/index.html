@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>选项 条件 ★ - Inky 中文指南 - 编程魔法师</title>
+    <title>针脚 Stitches - Inky 中文指南 - 编程魔法师</title>
 
     
     <link href="/css/nucleus.css?1616341484" rel="stylesheet">
@@ -66,7 +66,7 @@
   data-cf-beacon='{"token": "3dfb563b252747c982a95444d46e6c3a"}'></script>
 
   </head>
-  <body class="" data-url="/learn/choices-conditions/">
+  <body class="" data-url="/doc/basics/stitches/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -169,7 +169,7 @@
   
     
     <li data-nav-id="/learn/" title="快速上手" class="dd-item
-        parent
+        
         
         
         ">
@@ -260,7 +260,7 @@
  
   
     
-      <li data-nav-id="/learn/choices-conditions/" title="选项 条件 ★" class="dd-item active">
+      <li data-nav-id="/learn/choices-conditions/" title="选项 条件 ★" class="dd-item ">
         <a href="/learn/choices-conditions/">
         <b>3. </b>选项 条件 ★
         <i class="fas fa-check read-icon"></i>
@@ -289,7 +289,7 @@
   
     
     <li data-nav-id="/doc/" title="中文文档" class="dd-item
-        
+        parent
         
         
         ">
@@ -320,7 +320,7 @@
   
     
     <li data-nav-id="/doc/basics/" title="基础 Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -453,7 +453,7 @@
  
   
     
-      <li data-nav-id="/doc/basics/stitches/" title="针脚 Stitches" class="dd-item ">
+      <li data-nav-id="/doc/basics/stitches/" title="针脚 Stitches" class="dd-item active">
         <a href="/doc/basics/stitches/">
         <b>1.6 </b>针脚 Stitches
         <i class="fas fa-check read-icon"></i>
@@ -574,7 +574,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/learn/choices%20conditions.md" target="blank">
+                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/doc/Basics/stitches.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">改进文档</span>
                     </a>
@@ -605,7 +605,13 @@
             
           
           
-            <a href='/'>欢迎</a> > <a href='/learn/'>快速上手</a> > 选项 条件 ★
+            
+            
+          
+          
+            <a href='/'>欢迎</a> > <a href='/doc/'>中文文档</a> > <a href='/doc/basics/'>基础 Basics</a> > 针脚 Stitches
+          
+        
           
         
           
@@ -620,13 +626,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#选项-choices">选项 Choices</a></li>
-    <li><a href="#条件-conditions">条件 Conditions</a>
-      <ul>
-        <li><a href="#胶水-glue">胶水 Glue</a></li>
-        <li><a href="#开始结束-end">开始结束 END</a></li>
-      </ul>
-    </li>
+    <li><a href="#161-结点可有子结点">1.6.1 结点可有子结点</a></li>
+    <li><a href="#162-针脚有唯一的名称">1.6.2 针脚有唯一的名称</a></li>
+    <li><a href="#163-第一个针脚是默认的">1.6.3 第一个针脚是默认的</a></li>
+    <li><a href="#164-本地跳转-local-diverts">1.6.4 本地跳转 Local diverts</a></li>
+    <li><a href="#165-脚本文件可联合">1.6.5 脚本文件可联合</a></li>
   </ul>
 </nav>
     </div>
@@ -644,72 +648,80 @@
           
             <h1>
               
-              选项 条件 ★
+              针脚 Stitches
             </h1>
           
 
         
 
 
-<h2 id="选项-choices">选项 Choices</h2>
-<p>故事是由一段段剧情构成的，而 Ink 是由一个个<strong>结点</strong> <code>Knots</code> 组成的。</p>
-<p>✨ 结点是组成 Ink 最基础的部分，由两个等号 <code>==</code> 加结点名称表示。</p>
-<p>结点左侧至少要有两个等号；<strong>结点的名称仅支持英文，不允许有空格，不允许有重复</strong>。</p>
-<p>例如，<code>=== london ===</code> 或 <code>== london</code> 都是正确的；<code>=== lon don ==</code> 或 <code>== 伦敦</code> 是错误的。</p>
-<p>结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。</p>
-<p>结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。</p>
-<pre><code>=== london === //这是节点
-Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！   
-“领航,” 他喊到。 “我们去环游世界！”
-</code></pre><p>Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？</p>
-<p><img src="/images/learn/knots.png" alt="knots"></p>
-<p>🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。</p>
+<p><strong>Includes and Stitches</strong></p>
+<h2 id="161-结点可有子结点">1.6.1 结点可有子结点</h2>
+<p><strong>Knots can be subdivided</strong></p>
+<p>随着故事越来越长，在没有其他结构的情况下会越来越乱，难以保持秩序。</p>
+<p>结点可以包括被称为“针脚”的子结点。它们用单个等号 <code>=</code> 标记。</p>
+<pre><code>=== the_orient_express === // 结点：东方快车
+= in_first_class // 针脚：头等厢
+	……
+= in_third_class // 针脚：三等厢
+	……
+= in_the_guards_van // 针脚：警务车厢
+	……
+= missed_the_train // 针脚：错过火车
+	……
+</code></pre><p>例如可以将场景作结点，里面的事件作为针脚。</p>
 <hr>
-<h2 id="条件-conditions">条件 Conditions</h2>
-<p><img src="/images/learn/divert.png" alt="divert"></p>
-<p>故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有<strong>跳转</strong> <code>divert</code> 串了起来。</p>
-<p>✨ 跳转用跳转箭头（减号和右尖括号） <code>-&gt;</code> 表示，指向结点的名称。</p>
-<p>如，<code>-&gt; london</code> ，表示运行到这要跳转到 结点 london 继续运行。</p>
-<p>跳转是自动完成的，不会告知读者玩家。如下面这段，虽然从开头跳转到了 结点 london ，但读者玩家看起来只像是换了一行而已。</p>
-<pre><code>伦敦，1872年
-Phileas Fogg 先生的住所。
+<h2 id="162-针脚有唯一的名称">1.6.2 针脚有唯一的名称</h2>
+<p><strong>Stitches have unique names</strong></p>
+<p>针脚可跳转到它的“位置”（address）。</p>
+<pre><code>* [前往三等厢]
+  -&gt; the_orient_express.in_third_class // 跳转到针脚：东方快车结点，三等厢针脚
 
--&gt; london //这是跳转
+* [前往警务车厢]
+  -&gt; the_orient_express.in_the_guards_van //跳转到针脚： 东方快车结点，警务车厢针脚
+</code></pre><hr>
+<h2 id="163-第一个针脚是默认的">1.6.3 第一个针脚是默认的</h2>
+<p><strong>The first stitch is the default</strong></p>
+<p>如果结点内包含针脚，会默认跳转到结点内的第一个针脚。</p>
+<pre><code>* [前往头等厢]
+  “头等厢, 先生。 还有其他地方吗？”
+  -&gt; the_orient_express // 跳转到结点：东方快车
+</code></pre><p>等同于（&hellip;除非我们改变结点内针脚的顺序！）：</p>
+<pre><code>* [前往头等厢]
+  “头等厢, 先生。 还有其他地方吗？”
+  -&gt; the_orient_express.in_first_class // 跳转到针脚：东方快车结点，头等厢
+</code></pre><p>你也可以在针脚的顶部与结点间加入任何内容，但注意此时不会再自动进入第一个针脚。</p>
+<pre><code>=== the_orient_express ===  // 结点：东方快车
+我们上车了，但是去哪？
+* [头等厢] -&gt; in_first_class // 跳转到针脚：头等厢
+* [二等厢] -&gt; in_second_class //跳转到针脚：三等厢
 
-=== london === //这是节点
-Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！   
-“领航，” 他喊到。 “我们去环游世界！”
-</code></pre><p>Todo 例图</p>
-<h3 id="胶水-glue">胶水 Glue</h3>
-<p>甚至跳转也可以连行都不换，看起来就像一句话那么自然连贯。</p>
-<p>✨ <strong>胶水</strong> <code>glue</code> 可将文本强制连在一起，用左右两个尖括号 <code>&lt;&gt;</code> 表示。</p>
-<pre><code>我们回家&lt;&gt; 
--&gt; to_savile_row 
+= in_first_class // ✨ 不会再自动进入第一个针脚
+  ……
+= in_second_class // 针脚：三等厢
+  ……
+</code></pre><hr>
+<h2 id="164-本地跳转-local-diverts">1.6.4 本地跳转 Local diverts</h2>
+<p>在结点内部，你无需针脚的完整地址。</p>
+<pre><code>-&gt; the_orient_express // 跳转到结点：东方快车
 
-=== to_savile_row ===
-去萨维尔街&lt;&gt;
--&gt; as_fast_as_we_could
-
-=== as_fast_as_we_could ===
-尽可能的快
-</code></pre><p>Todo 例图</p>
-<p>原本跳转了三次该有三行内容，但在胶水的作用下只有一行了。</p>
-<h3 id="开始结束-end">开始结束 END</h3>
-<p>让我们简单来了解下 Ink 的运行方式把，Ink 会从文件的顶部逐行向下运行，直到结束。</p>
-<p>✨ 特别的，如果你的 Ink 开篇就是结点，那么你必须给它一个<strong>初始跳转</strong>。</p>
-<p>如下面的 <code>-&gt; top_knot</code> 告诉 Ink 从哪个结点开始。这在测试时也很有帮助，因为你可指定从任何一个结点开始运行。</p>
-<p>✨ 而要结束时，你则要给一个 <code>-&gt; END</code> 标记，告知 Ink 到这里就可以结束了。</p>
-<p>如果 Ink 检测到你的故事运行到某处就没有下文了，却没有 <code>-&gt; END</code> ，它会红色报错 <code>loose end</code> ，这可避免你遗漏某些分支的情。</p>
-<p>TODO：折叠 loose end例图</p>
-<pre><code>-&gt; top_knot //初始跳转
-
-=== top_knot ===
-Hello world!
-    -&gt; END
-</code></pre><p>🤔 现在你知到结点那节 —— “底部多了一行红色报错，预览区也没显示内容”的原因了吗？</p>
+=== the_orient_express === // 结点：东方快车
+= in_first_class // 针脚：头等厢
+  我安顿好我的主人。
+  * [前往三等厢]
+    -&gt; in_third_class // ✨ 跳转到针脚：三等厢
+= in_third_class // 针脚：三等厢
+  我坐下来了。
+</code></pre><p>这意味着针脚与结点不能共享名称，但不同的结点里可以有相同名称的针脚。（像东方快车与蒙古专列都可以有头等舱。）如你使用了不明确的名称，编译器会发出警告。</p>
 <hr>
-<hr>
-<p>👉 下一节我们学习怎么与读者玩家互动 —— 选项。</p>
+<h2 id="165-脚本文件可联合">1.6.5 脚本文件可联合</h2>
+<p><strong>Script files can be combined</strong></p>
+<p>你可用 INCLUDE 语句将内容拆到多个文件里。</p>
+<pre><code>INCLUDE newspaper.ink
+INCLUDE cities/vienna.ink
+INCLUDE journeys/orient_express.ink
+</code></pre><p>INCLUDE 语句必须在文件顶部，而非结点内部。</p>
+<p>结点跳转到哪个文件并没有限制，换句话说，分割文件并不会影响游戏的命名空间（namespacing） 。</p>
 
 
 <footer class="footline">
@@ -782,109 +794,6 @@ Hello world!
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -957,6 +866,58 @@ Hello world!
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -989,6 +950,55 @@ Hello world!
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -999,6 +1009,9 @@ Hello world!
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1020,10 +1033,10 @@ Hello world!
 	 
 	 
 		
-			<a class="nav nav-prev" href="/learn/knots-divert/" title="结点 跳转 ★"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/doc/basics/branching/" title="分支 Branching"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/doc/" title="中文文档" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/fourth/" title="资源索引" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

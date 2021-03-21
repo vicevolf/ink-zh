@@ -38,8 +38,8 @@ Nice to hear from you.
 
 ```plaintext
 Hello world!
-*	[Hello back!]
-	Nice to hear from you!
+* [Hello back!]
+  Nice to hear from you!
 ```
 
 ```plaintext
@@ -62,8 +62,8 @@ Nice to hear from you.
 
 ```plaintext
 Hello world!
-*	Hello [back!] right back to you!
-	Nice to hear from you!
+* Hello [back!] right back to you!
+  Nice to hear from you!
 ```
 
 ```plaintext
@@ -79,8 +79,8 @@ Nice to hear from you.
 
 ```plaintext
 “怎么了？” 我的主人问。
-*	“我有些累[。”]，”我回应道。
-	“确实，”他说。“这不太好。”
+* “我有些累[。”]，”我回应道。
+  “确实，”他说。“这不太好。”
 ```
 
 ```plaintext
@@ -100,12 +100,12 @@ Nice to hear from you.
 
 ```plaintext
 “怎么了？” 我的主人问。
-*	“我有些累[。”]，”我回应道。
-	“确实，”他说。“这不太好。”
-*	“没使，先生！” []我回应道。
-	“那好。”
-*	“我觉得，这场旅行太糟了[。”]我一点也不想再来一次了。”
-	“啊，”他回应道，不是那种不友好的语气。“我看得出你很沮丧，但明天一切都会好起来的。”
+* “我有些累[。”]，”我回应道。
+  “确实，”他说。“这不太好。”
+* “没使，先生！” []我回应道。
+  “那好。”
+* “我觉得，这场旅行太糟了[。”]我一点也不想再来一次了。”
+  “啊，”他回应道，不是那种不友好的语气。“我看得出你很沮丧，但明天一切都会好起来的。”
 ```
 
 上述的语法标记足以写出一组选项。在真正的游戏里，我们希望玩家进入不同分支的故事线。为了做到这一点我们需要更多的结构。

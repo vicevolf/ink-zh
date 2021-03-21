@@ -12,22 +12,22 @@
     <title>选项 Choices - Inky 中文指南 - 编程魔法师</title>
 
     
-    <link href="/css/nucleus.css?1616337723" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1616337723" rel="stylesheet">
-    <link href="/css/hybrid.css?1616337723" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1616337723" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1616337723" rel="stylesheet">
-    <link href="/css/auto-complete.css?1616337723" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1616337723" rel="stylesheet">
-    <link href="/css/theme.css?1616337723" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1616337723" rel="stylesheet">
+    <link href="/css/nucleus.css?1616341484" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1616341484" rel="stylesheet">
+    <link href="/css/hybrid.css?1616341484" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1616341484" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1616341484" rel="stylesheet">
+    <link href="/css/auto-complete.css?1616341484" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1616341484" rel="stylesheet">
+    <link href="/css/theme.css?1616341484" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1616341484" rel="stylesheet">
 
     
-    <link href="/css/theme-ink.css?1616337723" rel="stylesheet">
+    <link href="/css/theme-ink.css?1616341484" rel="stylesheet">
     
-    <link href="/?1616337723" rel="stylesheet">
+    <link href="/?1616341484" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616337723"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616341484"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -85,14 +85,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1616337723"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1616337723"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1616341484"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1616341484"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ink.magicoder.org\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1616337723"></script>
+<script type="text/javascript" src="/js/search.js?1616341484"></script>
 
     
   </div>
@@ -444,6 +444,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/doc/basics/stitches/" title="针脚 Stitches" class="dd-item ">
+        <a href="/doc/basics/stitches/">
+        <b>1.6 </b>针脚 Stitches
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -654,8 +675,8 @@ Nice to hear from you.
 <p><strong>Suppressing choice text</strong></p>
 <p>一些游戏文本内容与选项是分开的。在 ink 中，如用方括号 <code>[]</code> 括起来，选项的文本不会输出到内容中。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world!
-*	[Hello back!]
-	Nice to hear from you!
+* [Hello back!]
+  Nice to hear from you!
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world 
 1: Hello back! 
 
@@ -670,8 +691,8 @@ Nice to hear from you.
 <li>在它后面的内容，只会输出到内容。</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world!
-*	Hello [back!] right back to you!
-	Nice to hear from you!
+* Hello [back!] right back to you!
+  Nice to hear from you!
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world 
 1: Hello back!
 
@@ -680,8 +701,8 @@ Hello right back to you!
 Nice to hear from you.
 </code></pre></div><p>这在写对话类的选项时非常有用。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“怎么了？” 我的主人问。
-*	“我有些累[。”]，”我回应道。
-	“确实，”他说。“这不太好。”
+* “我有些累[。”]，”我回应道。
+  “确实，”他说。“这不太好。”
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“怎么了？” 我的主人问。
 1: “我有些累。”
 
@@ -692,12 +713,12 @@ Nice to hear from you.
 <h2 id="123-多重选项-multiple-choices">1.2.3 多重选项 Multiple Choices</h2>
 <p>让选项真的成为选项，我们要提供更多的选项。我们只需简单地把它们罗列出来：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“怎么了？” 我的主人问。
-*	“我有些累[。”]，”我回应道。
-	“确实，”他说。“这不太好。”
-*	“没使，先生！” []我回应道。
-	“那好。”
-*	“我觉得，这场旅行太糟了[。”]我一点也不想再来一次了。”
-	“啊，”他回应道，不是那种不友好的语气。“我看得出你很沮丧，但明天一切都会好起来的。”
+* “我有些累[。”]，”我回应道。
+  “确实，”他说。“这不太好。”
+* “没使，先生！” []我回应道。
+  “那好。”
+* “我觉得，这场旅行太糟了[。”]我一点也不想再来一次了。”
+  “啊，”他回应道，不是那种不友好的语气。“我看得出你很沮丧，但明天一切都会好起来的。”
 </code></pre></div><p>上述的语法标记足以写出一组选项。在真正的游戏里，我们希望玩家进入不同分支的故事线。为了做到这一点我们需要更多的结构。</p>
 
 
@@ -963,6 +984,22 @@ Nice to hear from you.
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1007,16 +1044,16 @@ Nice to hear from you.
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1616337723"></script>
-    <script src="/js/perfect-scrollbar.min.js?1616337723"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1616337723"></script>
-    <script src="/js/jquery.sticky.js?1616337723"></script>
-    <script src="/js/featherlight.min.js?1616337723"></script>
-    <script src="/js/highlight.pack.js?1616337723"></script>
+    <script src="/js/clipboard.min.js?1616341484"></script>
+    <script src="/js/perfect-scrollbar.min.js?1616341484"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1616341484"></script>
+    <script src="/js/jquery.sticky.js?1616341484"></script>
+    <script src="/js/featherlight.min.js?1616341484"></script>
+    <script src="/js/highlight.pack.js?1616341484"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1616337723"></script>
-    <script src="/js/learn.js?1616337723"></script>
-    <script src="/js/hugo-learn.js?1616337723"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1616341484"></script>
+    <script src="/js/learn.js?1616341484"></script>
+    <script src="/js/hugo-learn.js?1616341484"></script>
     
     
   </body>

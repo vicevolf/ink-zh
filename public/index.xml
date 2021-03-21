@@ -46,7 +46,7 @@ ink 提供了一个简单的系统，使用井号 # 为内容添加标识。
 Hello world! *	Hello back! Nice to hear from you! Hello world 1: Hello back! ▶ 1 Hello back! Nice to hear from you. 默认情况下，选项的文本也会再次输出到内容中。
  1.2.2 不输出文本的选项 Suppressing choice text
 一些游戏文本内容与选项是分开的。在 ink 中，如用方括号 [] 括起来，选项的文本不会输出到内容中。
-Hello world! *	[Hello back!] Nice to hear from you! Hello world 1: Hello back! ▶ 1 Nice to hear from you. 进阶：混合选项与输出文本 Advanced: mixing choice and output text</description>
+Hello world! * [Hello back!] Nice to hear from you! Hello world 1: Hello back! ▶ 1 Nice to hear from you. 进阶：混合选项与输出文本 Advanced: mixing choice and output text</description>
     </item>
     
     <item>
@@ -88,10 +88,10 @@ WARNING: Apparent loose end exists where the flow runs out. Do you need a &amp;#
       <guid>https://ink.magicoder.org/doc/basics/diverts/</guid>
       <description>1.4.1 结点跳转结点 Knots divert to knots
 你可以用跳转箭头 -&amp;gt; 告诉故事从一个结点到另一个结点。跳转无需用户输入会立即生效。
-=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了伦敦。 -&amp;gt; hurry_home // 跳转到结点：赶回家  === hurry_home === // 结点：赶回家 我们尽可能的快赶回了在裁缝街的家。  1.4.2 跳转是无感的 Diverts are invisible
+=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了伦敦。 -&amp;gt; hurry_home // 跳转到结点：赶回家 === hurry_home === // 结点：赶回家 我们尽可能的快赶回了在裁缝街的家。  1.4.2 跳转是无感的 Diverts are invisible
 跳转是无缝的，甚至可发生在一句话中：
-=== hurry_home === // 结点：赶回家 我们赶回了在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快  === as_fast_as_we_could === // 结点：尽可能的快 尽可能的快。 我们赶回在裁缝街的家尽可能的快。  1.4.3 胶水 Glue 通常会在每行新内容之间插入换行符。然而某些情况下，内容必须在同一行，可用胶水 &amp;lt;&amp;gt; 将其连接。
-=== hurry_home === // 结点：赶回家 我们赶回 &amp;lt;&amp;gt;// 使用胶水 -&amp;gt; to_savile_row // 跳转到结点：在裁缝街  === to_savile_row === // 结点：在裁缝街 在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快  === as_fast_as_we_could === // 结点：尽可能的快 &amp;lt;&amp;gt; 尽可能的快。// 使用胶水 我们赶回在裁缝街的家尽可能的快。 你不能用过多的胶水：相邻的多个胶水没有额外的效果。（也没办法解除胶水；一旦粘在同一行，就是粘住了。）</description>
+=== hurry_home === // 结点：赶回家 我们赶回了在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快 === as_fast_as_we_could === // 结点：尽可能的快 尽可能的快。 我们赶回在裁缝街的家尽可能的快。  1.4.3 胶水 Glue 通常会在每行新内容之间插入换行符。然而某些情况下，内容必须在同一行，可用胶水 &amp;lt;&amp;gt; 将其连接。
+=== hurry_home === // 结点：赶回家 我们赶回 &amp;lt;&amp;gt;// 使用胶水 -&amp;gt; to_savile_row // 跳转到结点：在裁缝街 === to_savile_row === // 结点：在裁缝街 在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快 === as_fast_as_we_could === // 结点：尽可能的快 &amp;lt;&amp;gt; 尽可能的快。// 使用胶水 我们赶回在裁缝街的家尽可能的快。 你不能用过多的胶水：相邻的多个胶水没有额外的效果。（也没办法解除胶水；一旦粘在同一行，就是粘住了。）</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@ WARNING: Apparent loose end exists where the flow runs out. Do you need a &amp;#
       <description>Branching The Flow
 1.5.1 基础分支 Basic branching 用结点，选项与跳转来组成 choose-your-own 游戏的基础结构。
 === paragraph_1 === // 结点：第一段 你手握宝剑，站在墙边。 * [打开大门] -&amp;gt; 跳转到结点：第二段 * [破门而入] -&amp;gt; 跳转到结点：第三段 * [转身回家] -&amp;gt; 跳转到结点：第四段 === paragraph_2 === // 结点：第二段 你打开大门，走上小路 ……  1.5.2 分支与合并 Branching and joining 使用跳转，作者可让故事线分支，也能让其再次合并，不会展示给玩家故事线已合并。
-=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了伦敦。 * “没时间耽误了！”[] 我喊道。 -&amp;gt; hurry_outside // 跳转到结点：赶到外面 * “先生，让我们享受这一刻吧！”[] 我喊道。 我的住人用力敲了下我的脑袋，把我拽到了门外。 -&amp;gt; dragged_outside // 跳转到结点：拽到外面 * [我们赶回家] -&amp;gt; hurry_outside === hurry_outside === // 结点：赶到外面 我们赶回在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快  === dragged_outside === //结点：拽到外面 他坚持要我们赶回在裁缝街的家 -&amp;gt; as_fast_as_we_could 跳转到结点：尽可能的快 === as_fast_as_we_could === //结点：我们尽快 &amp;lt;&amp;gt; 尽可能的快。  1.</description>
+=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了伦敦。 * “没时间耽误了！”[] 我喊道。 -&amp;gt; hurry_outside // 跳转到结点：赶到外面 * “先生，让我们享受这一刻吧！”[] 我喊道。 我的住人用力敲了下我的脑袋，把我拽到了门外。 -&amp;gt; dragged_outside // 跳转到结点：拽到外面 * [我们赶回家] -&amp;gt; hurry_outside === hurry_outside === // 结点：赶到外面 我们赶回在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快 === dragged_outside === //结点：拽到外面 他坚持要我们赶回在裁缝街的家 -&amp;gt; as_fast_as_we_could 跳转到结点：尽可能的快 === as_fast_as_we_could === //结点：我们尽快 &amp;lt;&amp;gt; 尽可能的快。  1.</description>
     </item>
     
     <item>
@@ -160,6 +160,24 @@ WARNING: Apparent loose end exists where the flow runs out. Do you need a &amp;#
  条件 Conditions 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
 ✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
 如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
+    </item>
+    
+    <item>
+      <title>针脚 Stitches</title>
+      <link>https://ink.magicoder.org/doc/basics/stitches/</link>
+      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>https://ink.magicoder.org/doc/basics/stitches/</guid>
+      <description>Includes and Stitches
+1.6.1 结点可有子结点 Knots can be subdivided
+随着故事越来越长，在没有其他结构的情况下会越来越乱，难以保持秩序。
+结点可以包括被称为“针脚”的子结点。它们用单个等号 = 标记。
+=== the_orient_express === // 结点：东方快车 = in_first_class // 针脚：头等厢 …… = in_third_class // 针脚：三等厢 …… = in_the_guards_van // 针脚：警务车厢 …… = missed_the_train // 针脚：错过火车 …… 例如可以将场景作结点，里面的事件作为针脚。
+ 1.6.2 针脚有唯一的名称 Stitches have unique names
+针脚可跳转到它的“位置”（address）。
+* [前往三等厢] -&amp;gt; the_orient_express.in_third_class // 跳转到针脚：东方快车结点，三等厢针脚 * [前往警务车厢] -&amp;gt; the_orient_express.in_the_guards_van //跳转到针脚： 东方快车结点，警务车厢针脚  1.6.3 第一个针脚是默认的 The first stitch is the default
+如果结点内包含针脚，会默认跳转到结点内的第一个针脚。
+* [前往头等厢] “头等厢, 先生。 还有其他地方吗？” -&amp;gt; the_orient_express // 跳转到结点：东方快车 等同于（&amp;hellip;除非我们改变结点内针脚的顺序！）：</description>
     </item>
     
   </channel>
