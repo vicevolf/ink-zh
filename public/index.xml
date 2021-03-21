@@ -17,6 +17,57 @@
     </item>
     
     <item>
+      <title>内容 Content</title>
+      <link>https://ink.magicoder.org/doc/basics/content/</link>
+      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>https://ink.magicoder.org/doc/basics/content/</guid>
+      <description>1.1.1 最简单的 ink 脚本 The simplest ink script
+最基本的 ink 脚本就是 .ink 文件中的普通文本而已：
+Hello, world! 当运行时，它们会输出为内容，然后停止。
+每行文本都会生成新段落。例如：
+Hello, world! Hello? Hello, are you there? 输出的内容看起来与文本一模一样的。
+ 1.1.2 注释 Comments 通常文件中的所有文本都会输出为内容，除非有特殊标记。
+最简单的语法标记是注释。Ink 支持两种注释方式。它们是方便人们阅读代码用的，而编译器会将它们忽略。
+“你怎么看？”她问。 // 不会被输出的内容… “我无法评论（comment），”我答。 /* …或是无行数行数限制的文本块 */ 另一种则是用于提醒作者还要去做什么，会被编译器提醒：
+TODO: 这块认真写！  1.1.3 标识 Tags 当引擎运行时，文本会按原样呈现。不过有时我们需要标记一行内容提供额外的信息，告诉游戏该怎么运行。
+ink 提供了一个简单的系统，使用井号 # 为内容添加标识。
+一行普通的游戏内文本。 # colour it blue 它们不会被展示在内容中，但可被游戏读取到，以便你按需使用。详见 RunningYourInk 。</description>
+    </item>
+    
+    <item>
+      <title>选项 Choices</title>
+      <link>https://ink.magicoder.org/doc/basics/choices/</link>
+      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>https://ink.magicoder.org/doc/basics/choices/</guid>
+      <description>1.2.1 最简单的 ink 选项 可通过文字选项让玩家输入。文字选项用星号 * 标记 。
+如无其他指示，选项会在下一行出现。
+Hello world! *	Hello back! Nice to hear from you! Hello world 1: Hello back! ▶ 1 Hello back! Nice to hear from you. 默认情况下，选项的文本也会再次输出到内容中。
+ 1.2.2 不输出文本的选项 Suppressing choice text
+一些游戏文本内容与选项是分开的。在 ink 中，如用方括号 [] 括起来，选项的文本不会输出到内容中。
+Hello world! *	[Hello back!] Nice to hear from you! Hello world 1: Hello back! ▶ 1 Nice to hear from you. 进阶：混合选项与输出文本 Advanced: mixing choice and output text</description>
+    </item>
+    
+    <item>
+      <title>结点 Knots</title>
+      <link>https://ink.magicoder.org/doc/basics/knots/</link>
+      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      
+      <guid>https://ink.magicoder.org/doc/basics/knots/</guid>
+      <description>1.3.1 内容片段被称作结点 Pieces of content are called knots
+为了让游戏有分支，我们需要给内容片段标记上标题。
+这些内容片段叫做“结点”，是 ink 最基本的结构单元。
+ 1.3.2 写个结点 Writing a knot 结点的开头由两个或更多等号 == 构成，例如 === top_knot === 。
+（右侧等号是可选的，结点标题的名称是不能有空格的单词。注，不支持中文。）
+结点标记下的内容均属于这个结点。
+=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了 London 。 进阶：从始至终 Advanced: a knottier &amp;ldquo;hello world&amp;rdquo;
+当你启动一个 ink 文件，结点外的内容会被自动运行，而结点不会。因此如果你开篇就是结点，就要告诉游戏从哪开始。我们要用一个跳转箭头 -&amp;gt; ，下一节会具体说明。
+-&amp;gt; top_knot === top_knot === Hello world! 除此之外，ink 不喜欢“不实在的结尾”（loose end），当识别到时会发出如下的警告：
+WARNING: Apparent loose end exists where the flow runs out. Do you need a &amp;#39;-&amp;gt; END&amp;#39; statement, choice or divert?</description>
+    </item>
+    
+    <item>
       <title>准备 Inky</title>
       <link>https://ink.magicoder.org/learn/get-inky/</link>
       <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>

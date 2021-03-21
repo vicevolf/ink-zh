@@ -6,7 +6,7 @@ chapter = true
 +++
 ![wellcome](/images/wellcome.png)
 
-# Inky 中文指南
+# Ink 中文指南
 
 创作 互动小说 / 文字冒险游戏 像写 [Markdown](https://www.zhihu.com/question/20409634) 一样**容易**！
 

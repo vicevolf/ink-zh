@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中文文档 on Inky 中文指南 - 编程魔法师</title>
+    <link>https://ink.magicoder.org/doc/</link>
+    <description>Recent content in 中文文档 on Inky 中文指南 - 编程魔法师</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 06 Mar 2021 15:09:55 +0800</lastBuildDate><atom:link href="https://ink.magicoder.org/doc/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

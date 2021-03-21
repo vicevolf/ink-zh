@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>欢迎 - Inky 中文指南 - 编程魔法师</title>
+    <title>选项 Choices - Inky 中文指南 - 编程魔法师</title>
 
     
     <link href="/css/nucleus.css?1616318305" rel="stylesheet">
@@ -66,7 +66,7 @@
   data-cf-beacon='{"token": "3dfb563b252747c982a95444d46e6c3a"}'></script>
 
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/doc/basics/choices/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -289,7 +289,7 @@
   
     
     <li data-nav-id="/doc/" title="中文文档" class="dd-item
-        
+        parent
         
         
         ">
@@ -320,7 +320,7 @@
   
     
     <li data-nav-id="/doc/basics/" title="基础 Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -369,7 +369,7 @@
  
   
     
-      <li data-nav-id="/doc/basics/choices/" title="选项 Choices" class="dd-item ">
+      <li data-nav-id="/doc/basics/choices/" title="选项 Choices" class="dd-item active">
         <a href="/doc/basics/choices/">
         <b>1.2 </b>选项 Choices
         <i class="fas fa-check read-icon"></i>
@@ -504,102 +504,165 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/doc/Basics/choices.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">改进文档</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>欢迎</a> > <a href='/doc/'>中文文档</a> > <a href='/doc/basics/'>基础 Basics</a> > 选项 Choices
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#121-最简单的-ink-选项">1.2.1 最简单的 ink 选项</a></li>
+    <li><a href="#122-不输出文本的选项">1.2.2 不输出文本的选项</a>
+      <ul>
+        <li><a href="#进阶混合选项与输出文本"><strong>进阶</strong>：混合选项与输出文本</a></li>
+      </ul>
+    </li>
+    <li><a href="#123-多重选项-multiple-choices">1.2.3 多重选项 Multiple Choices</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              选项 Choices
+            </h1>
           
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> MAGICODER.ORG</a>
-</span>
 
- 
-<p><img src="/images/wellcome.png" alt="wellcome"></p>
-<h1 id="ink-中文指南">Ink 中文指南</h1>
-<p>创作 互动小说 / 文字冒险游戏 像写 <a href="https://www.zhihu.com/question/20409634">Markdown</a> 一样<strong>容易</strong>！</p>
-<p><a href="https://github.com/inkle/ink">Ink</a>, <a href="https://github.com/inkle/inky">Inky</a>, 以及 <a href="https://github.com/inkle/ink-unity-integration">Ink-unity</a> 是 <a href="https://www.inklestudios.com/ink">inkle</a> 以 MIT 协议开源的</p>
-<p>
-<a  href="/first" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-question-circle"></i>
-    
-  
-  这是什么
-  
-</a>
+<h2 id="121-最简单的-ink-选项">1.2.1 最简单的 ink 选项</h2>
+<p>可通过文字选项让玩家输入。文字选项用星号 <code>*</code> 标记 。</p>
+<p>如无其他指示，选项会在下一行出现。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world!
+*	Hello back!
+	Nice to hear from you!
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world 
+1: Hello back! 
 
-
-<a  href="https://github.com/inkle/inky/releases" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-download"></i>
-    
-  
-  获取 Inky
-  
-</a>
-
-
-<a  href="/second" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-magic"></i>
-    
-  
-  快速上手
-  
-</a>
-</p>
-<p><img src="/images/hello.jpg" alt="hello"></p>
-<p>
-<a  href="https://coderadio.freecodecamp.org" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-coffee"></i>
-    
-  
-  Code Radio
-  
-</a>
-
-
-<a  href="https://afdian.net/@volfclub" target="_blank"  class="btn btn-default">
-  
-  
-  
-    
-  <i class="fas fa-ring fa-spin"></i>
-    
-  
-  支持我们
-  
-</a>
-</p>
+▶ 1
+Hello back!
+Nice to hear from you.
+</code></pre></div><p>默认情况下，选项的文本也会再次输出到内容中。</p>
 <hr>
-<h4 id="-sponsors虚位以待以下为示例内容">📢 <strong>Sponsors</strong>（虚位以待，以下为示例内容）</h4>
+<h2 id="122-不输出文本的选项">1.2.2 不输出文本的选项</h2>
+<p><strong>Suppressing choice text</strong></p>
+<p>一些游戏文本内容与选项是分开的。在 ink 中，如用方括号 <code>[]</code> 括起来，选项的文本不会输出到内容中。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world!
+*	[Hello back!]
+	Nice to hear from you!
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world 
+1: Hello back! 
+
+▶ 1
+Nice to hear from you.
+</code></pre></div><h3 id="进阶混合选项与输出文本"><strong>进阶</strong>：混合选项与输出文本</h3>
+<p><strong>Advanced: mixing choice and output text</strong></p>
+<p>实际上，方括号将选项内容分离，这提供了一种有效率的方式来完成一个分支：</p>
 <ul>
-<li><a href="https://www.myquark.cn">👨‍🚀 夸克，年轻人更爱用的智能搜索</a></li>
-<li><a href="https://afdian.net/@volfclub">支持我们，在这写上你的网址或名字</a></li>
+<li>在它前面的内容，会成为选项且输出到内容；</li>
+<li>在它里面的内容，会成为选项但不会输出到内容；</li>
+<li>在它后面的内容，只会输出到内容。</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world!
+*	Hello [back!] right back to you!
+	Nice to hear from you!
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello world 
+1: Hello back!
+
+▶ 1
+Hello right back to you!
+Nice to hear from you.
+</code></pre></div><p>这在写对话类的选项时非常有用。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“怎么了？” 我的主人问。
+*	“我有些累[。”]，”我回应道。
+	“确实，”他说。“这不太好。”
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“怎么了？” 我的主人问。
+1: “我有些累。”
+
+▶ 1
+“我有些累，”我回应道。
+“确实，”他说。“这不太好。”
+</code></pre></div><hr>
+<h2 id="123-多重选项-multiple-choices">1.2.3 多重选项 Multiple Choices</h2>
+<p>让选项真的成为选项，我们要提供更多的选项。我们只需简单地把它们罗列出来：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“怎么了？” 我的主人问。
+*	“我有些累[。”]，”我回应道。
+	“确实，”他说。“这不太好。”
+*	“没使，先生！” []我回应道。
+	“那好。”
+*	“我觉得，这场旅行太糟了[。”]我一点也不想再来一次了。”
+	“啊，”他回应道，不是那种不友好的语气。“我看得出你很沮丧，但明天一切都会好起来的。”
+</code></pre></div><p>上述的语法标记足以写出一组选项。在真正的游戏里，我们希望玩家进入不同分支的故事线。为了做到这一点我们需要更多的结构。</p>
+
+
+<footer class="footline">
 	
-  
-        
-            </div> 
+</footer>
+
         
         </div>
         
@@ -746,6 +809,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -761,6 +825,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -773,6 +838,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -790,6 +858,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -805,6 +874,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -848,8 +920,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/doc/basics/content/" title="内容 Content"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/first/" title="欢迎回来" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/doc/basics/knots/" title="结点 Knots" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

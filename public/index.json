@@ -4,7 +4,7 @@
 	"title": "欢迎",
 	"tags": [],
 	"description": "",
-	"content": "Inky 中文指南 创作 互动小说 / 文字冒险游戏 像写 Markdown 一样容易！\nInk, Inky, 以及 Ink-unity 是 inkle 以 MIT 协议开源的\n\r\r这是什么\r\r\r获取 Inky\r\r\r快速上手\r\r\r\rCode Radio\r\r\r支持我们\r\r 📢 Sponsors（虚位以待，以下为示例内容）  👨‍🚀 夸克，年轻人更爱用的智能搜索 支持我们，在这写上你的网址或名字  "
+	"content": "Ink 中文指南 创作 互动小说 / 文字冒险游戏 像写 Markdown 一样容易！\nInk, Inky, 以及 Ink-unity 是 inkle 以 MIT 协议开源的\n\r\r这是什么\r\r\r获取 Inky\r\r\r快速上手\r\r\r\rCode Radio\r\r\r支持我们\r\r 📢 Sponsors（虚位以待，以下为示例内容）  👨‍🚀 夸克，年轻人更爱用的智能搜索 支持我们，在这写上你的网址或名字  "
 },
 {
 	"uri": "https://ink.magicoder.org/first/",
@@ -28,11 +28,18 @@
 	"content": "学到什么  基础语法，怎么用 Ink 讲一个简单的故事； 导出网页，轻松分享你的故事给好友们游玩； 网页专属，让故事更像互动小说或文字冒险游戏。  需要什么 这是为刚到新手村的玩家准备的。\n 无需了解编程，有一颗有充满热情的心最佳； 一台你能用的电脑，用它将你想法“编成”现实。  能做什么 以文本为主的互动小说或文字冒险游戏，支持逻辑与变量，插图播放声音。如经典的生命线系列游戏，让读者玩家在海量文本与选择中徘徊，决定故事的走向。\n\r\r🔎 展开 生命线系列…\r\r\r 《生命线 Lifeline》是一款文字冒险游戏。由于飞船坠毁，导致宇航员泰勒（Taylor）被困在这里，而他的同僚不是失踪就是已经阵亡，于是玩家成为他求生的唯一希望。玩家在游戏中会以实时通讯的形式进行游戏，玩家会与泰勒来回发送信息进行沟通，帮助他解决各种难题。并可以选择剧情分支，指引泰勒在这个陌生的星球上进行探险。\n \r 但如果你想做的是视觉小说，有大量的立绘与插图，复杂的视觉演出效果，类似于橙光等等。那么本教程可能就不太适合你了，因为只靠 Ink 很难满足这些需求。推荐你试试看 RenPy 这类视觉小说引擎（visual novel engine），更容易实现你的想法。（事实上，Ink 可与 Unity 联合，做出更复杂的游戏 —— 不过这已超出“快速上手”的范围了，故不再赘述。）\n “用最容易的方式创作，用最简单的形式呈现。” —— 似乎有些道理\n  👉 准备好就进入下一节开始我们的学习吧，在 MAGICODER.ORG 一切教程都是免费的。如你觉得本教程有用，不如给你的故事加个有趣的“狼头人” NPC 吧 —— 当然，这是在我们学完教程后的事了。\n"
 },
 {
-	"uri": "https://ink.magicoder.org/third/",
+	"uri": "https://ink.magicoder.org/doc/basics/",
+	"title": "基础 Basics",
+	"tags": [],
+	"description": "",
+	"content": "Ink 中文文档 ink 是一门围绕标记纯文本展开的脚本语言，以生成互动脚本。\n最简单的，它能让你写出一个 Choose Your Own 风格的故事，或有分支的对话树。但它真正的优势在于大量选项的复杂对话，以及大量故事线的编组。\nink 提供了一些特性能让非技术人员也能随心分支，写好每一个分支的后续，同时搞定主线与支线，而不必手忙脚乱。故事线则尽可能地以声明式描述。（注，声明式是告诉机器“做什么 what to do”，与其相对的命令式则是告诉机器“怎么做 how to do”。）\nink 的目标是让一切清新有逻辑地排序，“用眼”就能检查每条对话分支。\n它在设计时也考虑了想法在头脑中思考的过程，因此编写一个故事线是非常快的。\n"
+},
+{
+	"uri": "https://ink.magicoder.org/doc/",
 	"title": "中文文档",
 	"tags": [],
 	"description": "",
-	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+	"content": "Ink 中文文档 ink 是一门围绕标记纯文本展开的脚本语言，以生成互动脚本。\n最简单的，它能让你写出一个 Choose Your Own 风格的故事，或有分支的对话树。但它真正的优势在于大量选项的复杂对话，以及大量故事线的编组。\nink 提供了一些特性能让非技术人员也能随心分支，写好每一个分支的后续，同时搞定主线与支线，而不必手忙脚乱。故事线则尽可能地以声明式描述。（注，声明式是告诉机器“做什么 what to do”，与其相对的命令式则是告诉机器“怎么做 how to do”。）\nink 的目标是让一切清新有逻辑地排序，“用眼”就能检查每条对话分支。\n它在设计时也考虑了想法在头脑中思考的过程，因此编写一个故事线是非常快的。\n"
 },
 {
 	"uri": "https://ink.magicoder.org/fourth/",
@@ -40,6 +47,27 @@
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
+	"uri": "https://ink.magicoder.org/doc/basics/content/",
+	"title": "内容 Content",
+	"tags": [],
+	"description": "",
+	"content": "1.1.1 最简单的 ink 脚本 The simplest ink script\n最基本的 ink 脚本就是 .ink 文件中的普通文本而已：\nHello, world! 当运行时，它们会输出为内容，然后停止。\n每行文本都会生成新段落。例如：\nHello, world! Hello? Hello, are you there? 输出的内容看起来与文本一模一样的。\n 1.1.2 注释 Comments 通常文件中的所有文本都会输出为内容，除非有特殊标记。\n最简单的语法标记是注释。Ink 支持两种注释方式。它们是方便人们阅读代码用的，而编译器会将它们忽略。\n“你怎么看？”她问。 // 不会被输出的内容… “我无法评论（comment），”我答。 /* …或是无行数行数限制的文本块 */ 另一种则是用于提醒作者还要去做什么，会被编译器提醒：\nTODO: 这块认真写！  1.1.3 标识 Tags 当引擎运行时，文本会按原样呈现。不过有时我们需要标记一行内容提供额外的信息，告诉游戏该怎么运行。\nink 提供了一个简单的系统，使用井号 # 为内容添加标识。\n一行普通的游戏内文本。 # colour it blue 它们不会被展示在内容中，但可被游戏读取到，以便你按需使用。详见 RunningYourInk 。\n"
+},
+{
+	"uri": "https://ink.magicoder.org/doc/basics/choices/",
+	"title": "选项 Choices",
+	"tags": [],
+	"description": "",
+	"content": "1.2.1 最简单的 ink 选项 可通过文字选项让玩家输入。文字选项用星号 * 标记 。\n如无其他指示，选项会在下一行出现。\nHello world! *\tHello back! Nice to hear from you! Hello world 1: Hello back! ▶ 1 Hello back! Nice to hear from you. 默认情况下，选项的文本也会再次输出到内容中。\n 1.2.2 不输出文本的选项 Suppressing choice text\n一些游戏文本内容与选项是分开的。在 ink 中，如用方括号 [] 括起来，选项的文本不会输出到内容中。\nHello world! *\t[Hello back!] Nice to hear from you! Hello world 1: Hello back! ▶ 1 Nice to hear from you. 进阶：混合选项与输出文本 Advanced: mixing choice and output text\n实际上，方括号将选项内容分离，这提供了一种有效率的方式来完成一个分支：\n 在它前面的内容，会成为选项且输出到内容； 在它里面的内容，会成为选项但不会输出到内容； 在它后面的内容，只会输出到内容。  Hello world! *\tHello [back!] right back to you! Nice to hear from you! Hello world 1: Hello back! ▶ 1 Hello right back to you! Nice to hear from you. 这在写对话类的选项时非常有用。\n“怎么了？” 我的主人问。 *\t“我有些累[。”]，”我回应道。 “确实，”他说。“这不太好。” “怎么了？” 我的主人问。 1: “我有些累。” ▶ 1 “我有些累，”我回应道。 “确实，”他说。“这不太好。”  1.2.3 多重选项 Multiple Choices 让选项真的成为选项，我们要提供更多的选项。我们只需简单地把它们罗列出来：\n“怎么了？” 我的主人问。 *\t“我有些累[。”]，”我回应道。 “确实，”他说。“这不太好。” *\t“没使，先生！” []我回应道。 “那好。” *\t“我觉得，这场旅行太糟了[。”]我一点也不想再来一次了。” “啊，”他回应道，不是那种不友好的语气。“我看得出你很沮丧，但明天一切都会好起来的。” 上述的语法标记足以写出一组选项。在真正的游戏里，我们希望玩家进入不同分支的故事线。为了做到这一点我们需要更多的结构。\n"
+},
+{
+	"uri": "https://ink.magicoder.org/doc/basics/knots/",
+	"title": "结点 Knots",
+	"tags": [],
+	"description": "",
+	"content": "1.3.1 内容片段被称作结点 Pieces of content are called knots\n为了让游戏有分支，我们需要给内容片段标记上标题。\n这些内容片段叫做“结点”，是 ink 最基本的结构单元。\n 1.3.2 写个结点 Writing a knot 结点的开头由两个或更多等号 == 构成，例如 === top_knot === 。\n（右侧等号是可选的，结点标题的名称是不能有空格的单词。注，不支持中文。）\n结点标记下的内容均属于这个结点。\n=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了 London 。 进阶：从始至终 Advanced: a knottier \u0026ldquo;hello world\u0026rdquo;\n当你启动一个 ink 文件，结点外的内容会被自动运行，而结点不会。因此如果你开篇就是结点，就要告诉游戏从哪开始。我们要用一个跳转箭头 -\u0026gt; ，下一节会具体说明。\n-\u0026gt; top_knot === top_knot === Hello world! 除此之外，ink 不喜欢“不实在的结尾”（loose end），当识别到时会发出如下的警告：\nWARNING: Apparent loose end exists where the flow runs out. Do you need a \u0026#39;-\u0026gt; END\u0026#39; statement, choice or divert? on line 3 of tests/test.ink 运行时则是这样的：\nRuntime error in tests/test.ink line 3: ran out of content. Do you need a \u0026#39;-\u0026gt; DONE\u0026#39; or \u0026#39;-\u0026gt; END\u0026#39;? 这样就不会报错了：\n=== top_knot === Hello world! -\u0026gt; END -\u0026gt; END 同时是作者与编译器的标记，它意味着“故事线到这就结束了”。\n"
 },
 {
 	"uri": "https://ink.magicoder.org/learn/get-inky/",
