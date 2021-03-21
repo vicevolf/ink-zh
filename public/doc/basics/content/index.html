@@ -12,22 +12,22 @@
     <title>内容 Content - Inky 中文指南 - 编程魔法师</title>
 
     
-    <link href="/css/nucleus.css?1616318305" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1616318305" rel="stylesheet">
-    <link href="/css/hybrid.css?1616318305" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1616318305" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1616318305" rel="stylesheet">
-    <link href="/css/auto-complete.css?1616318305" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1616318305" rel="stylesheet">
-    <link href="/css/theme.css?1616318305" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1616318305" rel="stylesheet">
+    <link href="/css/nucleus.css?1616337723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1616337723" rel="stylesheet">
+    <link href="/css/hybrid.css?1616337723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1616337723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1616337723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1616337723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1616337723" rel="stylesheet">
+    <link href="/css/theme.css?1616337723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1616337723" rel="stylesheet">
 
     
-    <link href="/css/theme-ink.css?1616318305" rel="stylesheet">
+    <link href="/css/theme-ink.css?1616337723" rel="stylesheet">
     
-    <link href="/?1616318305" rel="stylesheet">
+    <link href="/?1616337723" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616318305"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616337723"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -85,14 +85,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1616318305"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1616318305"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1616337723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1616337723"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ink.magicoder.org\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1616318305"></script>
+<script type="text/javascript" src="/js/search.js?1616337723"></script>
 
     
   </div>
@@ -402,6 +402,48 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/doc/basics/diverts/" title="跳转 Divert" class="dd-item ">
+        <a href="/doc/basics/diverts/">
+        <b>1.4 </b>跳转 Divert
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/doc/basics/branching/" title="分支 Branching" class="dd-item ">
+        <a href="/doc/basics/branching/">
+        <b>1.5 </b>分支 Branching
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -596,15 +638,15 @@
 <pre><code>Hello, world!
 </code></pre><p>当运行时，它们会输出为内容，然后停止。</p>
 <p>每行文本都会生成新段落。例如：</p>
-<pre><code>Hello, world!
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Hello, world!
 Hello?
 Hello, are you there?
-</code></pre><p>输出的内容看起来与文本一模一样的。</p>
+</code></pre></div><p>输出的内容看起来与文本一模一样的。</p>
 <hr>
 <h2 id="112-注释-comments">1.1.2 注释 Comments</h2>
 <p>通常文件中的所有文本都会输出为内容，除非有特殊标记。</p>
 <p>最简单的语法标记是注释。Ink 支持两种注释方式。它们是方便人们阅读代码用的，而编译器会将它们忽略。</p>
-<pre><code>“你怎么看？”她问。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">“你怎么看？”她问。
 
 // 不会被输出的内容…
 
@@ -613,9 +655,9 @@ Hello, are you there?
 /*
 	…或是无行数行数限制的文本块
 */
-</code></pre><p>另一种则是用于提醒作者还要去做什么，会被编译器提醒：</p>
-<pre><code>TODO: 这块认真写！
-</code></pre><hr>
+</code></pre></div><p>另一种则是用于提醒作者还要去做什么，会被编译器提醒：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">TODO: 这块认真写！
+</code></pre></div><hr>
 <h2 id="113-标识-tags">1.1.3 标识 Tags</h2>
 <p>当引擎运行时，文本会按原样呈现。不过有时我们需要标记一行内容提供额外的信息，告诉游戏该怎么运行。</p>
 <p>ink 提供了一个简单的系统，使用井号 <code>#</code> 为内容添加标识。</p>
@@ -850,6 +892,38 @@ Hello, are you there?
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -894,16 +968,16 @@ Hello, are you there?
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1616318305"></script>
-    <script src="/js/perfect-scrollbar.min.js?1616318305"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1616318305"></script>
-    <script src="/js/jquery.sticky.js?1616318305"></script>
-    <script src="/js/featherlight.min.js?1616318305"></script>
-    <script src="/js/highlight.pack.js?1616318305"></script>
+    <script src="/js/clipboard.min.js?1616337723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1616337723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1616337723"></script>
+    <script src="/js/jquery.sticky.js?1616337723"></script>
+    <script src="/js/featherlight.min.js?1616337723"></script>
+    <script src="/js/highlight.pack.js?1616337723"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1616318305"></script>
-    <script src="/js/learn.js?1616318305"></script>
-    <script src="/js/hugo-learn.js?1616318305"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1616337723"></script>
+    <script src="/js/learn.js?1616337723"></script>
+    <script src="/js/hugo-learn.js?1616337723"></script>
     
     
   </body>

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>资源索引 - Inky 中文指南 - 编程魔法师</title>
+    <title>分支 Branching - Inky 中文指南 - 编程魔法师</title>
 
     
     <link href="/css/nucleus.css?1616337723" rel="stylesheet">
@@ -66,7 +66,7 @@
   data-cf-beacon='{"token": "3dfb563b252747c982a95444d46e6c3a"}'></script>
 
   </head>
-  <body class="" data-url="/fourth/">
+  <body class="" data-url="/doc/basics/branching/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -289,7 +289,7 @@
   
     
     <li data-nav-id="/doc/" title="中文文档" class="dd-item
-        
+        parent
         
         
         ">
@@ -320,7 +320,7 @@
   
     
     <li data-nav-id="/doc/basics/" title="基础 Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -432,7 +432,7 @@
  
   
     
-      <li data-nav-id="/doc/basics/branching/" title="分支 Branching" class="dd-item ">
+      <li data-nav-id="/doc/basics/branching/" title="分支 Branching" class="dd-item active">
         <a href="/doc/basics/branching/">
         <b>1.5 </b>分支 Branching
         <i class="fas fa-check read-icon"></i>
@@ -470,8 +470,8 @@
   
     
     <li data-nav-id="/fourth/" title="资源索引" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/fourth/">
@@ -553,7 +553,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/fourth/_index.md" target="blank">
+                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/doc/Basics/branching.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">改进文档</span>
                     </a>
@@ -568,6 +568,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -578,7 +580,19 @@
             
           
           
-            <a href='/'>欢迎</a> > 资源索引
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>欢迎</a> > <a href='/doc/'>中文文档</a> > <a href='/doc/basics/'>基础 Basics</a> > 分支 Branching
+          
+        
+          
+        
           
         
           
@@ -587,6 +601,23 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#151-基础分支-basic-branching">1.5.1 基础分支 Basic branching</a></li>
+    <li><a href="#152-分支与合并-branching-and-joining">1.5.2 分支与合并 Branching and joining</a></li>
+    <li><a href="#153-故事线-the-story-flow">1.5.3 故事线 The story flow</a>
+      <ul>
+        <li><a href="#进阶循环"><strong>进阶</strong>：循环</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -594,29 +625,69 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              分支 Branching
+            </h1>
           
 
         
 
 
+<p><strong>Branching The Flow</strong></p>
+<h2 id="151-基础分支-basic-branching">1.5.1 基础分支 Basic branching</h2>
+<p>用结点，选项与跳转来组成 choose-your-own 游戏的基础结构。</p>
+<pre><code>=== paragraph_1 === // 结点：第一段
+你手握宝剑，站在墙边。
+*   [打开大门] -&gt; 跳转到结点：第二段
+*   [破门而入] -&gt; 跳转到结点：第三段
+*   [转身回家] -&gt; 跳转到结点：第四段
 
-	<h3 id="chapter-x">Chapter X</h3>
-<h1 id="some-chapter-title">Some Chapter title</h1>
-<p>Lorem Ipsum.</p>
+=== paragraph_2 === // 结点：第二段
+你打开大门，走上小路
+……
+</code></pre><hr>
+<h2 id="152-分支与合并-branching-and-joining">1.5.2 分支与合并 Branching and joining</h2>
+<p>使用跳转，作者可让故事线分支，也能让其再次合并，不会展示给玩家故事线已合并。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> back_in_london <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：回到伦敦
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们晚上九点四十五准时到了伦敦。</span>
+<span style="color:#f92672">*</span>   <span style="color:#960050;background-color:#1e0010">“没时间耽误了！”</span>[] <span style="color:#960050;background-color:#1e0010">我喊道。</span>
+    <span style="color:#f92672">-&gt;</span> hurry_outside <span style="color:#75715e">// 跳转到结点：赶到外面
+</span><span style="color:#75715e"></span><span style="color:#f92672">*</span>   <span style="color:#960050;background-color:#1e0010">“先生，让我们享受这一刻吧！”</span>[] <span style="color:#960050;background-color:#1e0010">我喊道。</span>
+    <span style="color:#960050;background-color:#1e0010">我的住人用力敲了下我的脑袋，把我拽到了门外。</span>
+    <span style="color:#f92672">-&gt;</span> dragged_outside <span style="color:#75715e">// 跳转到结点：拽到外面
+</span><span style="color:#75715e"></span><span style="color:#f92672">*</span>   [<span style="color:#960050;background-color:#1e0010">我们赶回家</span>] <span style="color:#f92672">-&gt;</span> hurry_outside
+    
+<span style="color:#f92672">===</span> hurry_outside <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶到外面
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们赶回在裁缝街的家</span> <span style="color:#f92672">-&gt;</span> as_fast_as_we_could <span style="color:#75715e">// 跳转到结点：尽可能的快
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">===</span> dragged_outside <span style="color:#f92672">===</span> <span style="color:#75715e">//结点：拽到外面
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">他坚持要我们赶回在裁缝街的家</span>
+<span style="color:#f92672">-&gt;</span> as_fast_as_we_could <span style="color:#960050;background-color:#1e0010">跳转到结点：尽可能的快</span>
 
+<span style="color:#f92672">===</span> as_fast_as_we_could <span style="color:#f92672">===</span> <span style="color:#75715e">//结点：我们尽快
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#960050;background-color:#1e0010">尽可能的快。</span>
+</code></pre></div><hr>
+<h2 id="153-故事线-the-story-flow">1.5.3 故事线 The story flow</h2>
+<p>结点与跳转组成创造了最基本的故事线。这个故事线是“扁平的”（flat）—— 没有调用栈（注，编程用语。此处形容复杂），也没有跳转“返回”（returned）。</p>
+<p>在大多数 ink 脚本中，故事线从顶部开始，像意面一样缠绕搅动，最终可喜可贺地到达了 -&gt; END 。</p>
+<p>这种非常宽松的结构可让作者续写，分支，合并，而无需关心结构的走向。无需用样板跟踪分支跳转或任何状态。</p>
+<h3 id="进阶循环"><strong>进阶</strong>：循环</h3>
+<p><strong>Advanced: Loops</strong></p>
+<p>你完全可以用跳转创造循环内容，并且 ink 能有些特性，如控制内容自己变化，选项何时可以选择。</p>
+<p>可浏览“可变文本”和“条件选项”章节了解更多。</p>
+<p>看，下面是一个循环，但绝不是一个好循环：</p>
+<pre><code>=== round ===
+and
+-&gt; round
+</code></pre>
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -763,6 +834,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -778,6 +850,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -790,6 +863,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -855,6 +931,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -877,6 +954,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -898,10 +977,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/doc/basics/branching/" title="分支 Branching"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/doc/basics/diverts/" title="跳转 Divert"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/first/" title="欢迎回来" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/fourth/" title="资源索引" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -925,3 +1004,4 @@
     
   </body>
 </html>
+

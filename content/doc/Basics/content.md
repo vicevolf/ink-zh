@@ -19,7 +19,7 @@ Hello, world!
 
 每行文本都会生成新段落。例如：
 
-```
+```plaintext
 Hello, world!
 Hello?
 Hello, are you there?
@@ -34,7 +34,7 @@ Hello, are you there?
 
 最简单的语法标记是注释。Ink 支持两种注释方式。它们是方便人们阅读代码用的，而编译器会将它们忽略。
 
-```
+```plaintext
 “你怎么看？”她问。
 
 // 不会被输出的内容…
@@ -48,7 +48,7 @@ Hello, are you there?
 
 另一种则是用于提醒作者还要去做什么，会被编译器提醒：
 
-```
+```plaintext
 TODO: 这块认真写！
 ```
 

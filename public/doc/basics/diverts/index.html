@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>资源索引 - Inky 中文指南 - 编程魔法师</title>
+    <title>跳转 Divert - Inky 中文指南 - 编程魔法师</title>
 
     
     <link href="/css/nucleus.css?1616337723" rel="stylesheet">
@@ -66,7 +66,7 @@
   data-cf-beacon='{"token": "3dfb563b252747c982a95444d46e6c3a"}'></script>
 
   </head>
-  <body class="" data-url="/fourth/">
+  <body class="" data-url="/doc/basics/diverts/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -289,7 +289,7 @@
   
     
     <li data-nav-id="/doc/" title="中文文档" class="dd-item
-        
+        parent
         
         
         ">
@@ -320,7 +320,7 @@
   
     
     <li data-nav-id="/doc/basics/" title="基础 Basics" class="dd-item
-        
+        parent
         
         
         ">
@@ -411,7 +411,7 @@
  
   
     
-      <li data-nav-id="/doc/basics/diverts/" title="跳转 Divert" class="dd-item ">
+      <li data-nav-id="/doc/basics/diverts/" title="跳转 Divert" class="dd-item active">
         <a href="/doc/basics/diverts/">
         <b>1.4 </b>跳转 Divert
         <i class="fas fa-check read-icon"></i>
@@ -470,8 +470,8 @@
   
     
     <li data-nav-id="/fourth/" title="资源索引" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/fourth/">
@@ -553,7 +553,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/fourth/_index.md" target="blank">
+                    <a class="github-link" title='改进文档' href="https://github.com/volfclub/ink-zh/blob/main/content/doc/Basics/diverts.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">改进文档</span>
                     </a>
@@ -568,6 +568,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -578,7 +580,19 @@
             
           
           
-            <a href='/'>欢迎</a> > 资源索引
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>欢迎</a> > <a href='/doc/'>中文文档</a> > <a href='/doc/basics/'>基础 Basics</a> > 跳转 Divert
+          
+        
+          
+        
           
         
           
@@ -587,6 +601,19 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#141-结点跳转结点">1.4.1 结点跳转结点</a></li>
+    <li><a href="#142-跳转是无感的">1.4.2 跳转是无感的</a></li>
+    <li><a href="#143-胶水-glue">1.4.3 胶水 Glue</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -594,29 +621,57 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              跳转 Divert
+            </h1>
           
 
         
 
 
+<h2 id="141-结点跳转结点">1.4.1 结点跳转结点</h2>
+<p><strong>Knots divert to knots</strong></p>
+<p>你可以用跳转箭头 -&gt; 告诉故事从一个结点到另一个结点。跳转无需用户输入会立即生效。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> back_in_london <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：回到伦敦
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们晚上九点四十五准时到了伦敦。</span>
+<span style="color:#f92672">-&gt;</span> hurry_home <span style="color:#75715e">// 跳转到结点：赶回家
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">===</span> hurry_home <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶回家
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们尽可能的快赶回了在裁缝街的家。</span>
+</code></pre></div><hr>
+<h2 id="142-跳转是无感的">1.4.2 跳转是无感的</h2>
+<p><strong>Diverts are invisible</strong></p>
+<p>跳转是无缝的，甚至可发生在一句话中：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> hurry_home <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶回家
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们赶回了在裁缝街的家</span> <span style="color:#f92672">-&gt;</span> as_fast_as_we_could <span style="color:#75715e">// 跳转到结点：尽可能的快
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">===</span> as_fast_as_we_could <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：尽可能的快
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">尽可能的快。</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">我们赶回在裁缝街的家尽可能的快。
+</code></pre></div><hr>
+<h2 id="143-胶水-glue">1.4.3 胶水 Glue</h2>
+<p>通常会在每行新内容之间插入换行符。然而某些情况下，内容必须在同一行，可用胶水 <code>&lt;&gt;</code> 将其连接。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> hurry_home <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：赶回家
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">我们赶回</span> <span style="color:#f92672">&lt;&gt;</span><span style="color:#75715e">// 使用胶水
+</span><span style="color:#75715e"></span><span style="color:#f92672">-&gt;</span> to_savile_row <span style="color:#75715e">// 跳转到结点：在裁缝街
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">===</span> to_savile_row <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：在裁缝街
+</span><span style="color:#75715e"></span><span style="color:#960050;background-color:#1e0010">在裁缝街的家</span>
+<span style="color:#f92672">-&gt;</span> as_fast_as_we_could <span style="color:#75715e">// 跳转到结点：尽可能的快
+</span><span style="color:#75715e"></span>
+<span style="color:#f92672">===</span> as_fast_as_we_could <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：尽可能的快
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;&gt;</span> <span style="color:#960050;background-color:#1e0010">尽可能的快。</span><span style="color:#75715e">// 使用胶水
+</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">我们赶回在裁缝街的家尽可能的快。
+</code></pre></div><p>你不能用过多的胶水：相邻的多个胶水没有额外的效果。（也没办法解除胶水；一旦粘在同一行，就是粘住了。）</p>
 
-	<h3 id="chapter-x">Chapter X</h3>
-<h1 id="some-chapter-title">Some Chapter title</h1>
-<p>Lorem Ipsum.</p>
 
-
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -763,6 +818,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -778,6 +834,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -790,6 +847,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -839,6 +899,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -855,6 +916,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -876,7 +940,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -898,10 +961,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/doc/basics/branching/" title="分支 Branching"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/doc/basics/knots/" title="结点 Knots"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/first/" title="欢迎回来" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/doc/basics/branching/" title="分支 Branching" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -925,3 +988,4 @@
     
   </body>
 </html>
+

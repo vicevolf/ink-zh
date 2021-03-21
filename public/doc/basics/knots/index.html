@@ -12,22 +12,22 @@
     <title>结点 Knots - Inky 中文指南 - 编程魔法师</title>
 
     
-    <link href="/css/nucleus.css?1616318305" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1616318305" rel="stylesheet">
-    <link href="/css/hybrid.css?1616318305" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1616318305" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1616318305" rel="stylesheet">
-    <link href="/css/auto-complete.css?1616318305" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1616318305" rel="stylesheet">
-    <link href="/css/theme.css?1616318305" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1616318305" rel="stylesheet">
+    <link href="/css/nucleus.css?1616337723" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1616337723" rel="stylesheet">
+    <link href="/css/hybrid.css?1616337723" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1616337723" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1616337723" rel="stylesheet">
+    <link href="/css/auto-complete.css?1616337723" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1616337723" rel="stylesheet">
+    <link href="/css/theme.css?1616337723" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1616337723" rel="stylesheet">
 
     
-    <link href="/css/theme-ink.css?1616318305" rel="stylesheet">
+    <link href="/css/theme-ink.css?1616337723" rel="stylesheet">
     
-    <link href="/?1616318305" rel="stylesheet">
+    <link href="/?1616337723" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616318305"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js?1616337723"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -85,14 +85,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1616318305"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1616318305"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1616337723"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1616337723"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ink.magicoder.org\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1616318305"></script>
+<script type="text/javascript" src="/js/search.js?1616337723"></script>
 
     
   </div>
@@ -402,6 +402,48 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/doc/basics/diverts/" title="跳转 Divert" class="dd-item ">
+        <a href="/doc/basics/diverts/">
+        <b>1.4 </b>跳转 Divert
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/doc/basics/branching/" title="分支 Branching" class="dd-item ">
+        <a href="/doc/basics/branching/">
+        <b>1.5 </b>分支 Branching
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -602,25 +644,25 @@
 <p>结点的开头由两个或更多等号 <code>==</code> 构成，例如  <code>=== top_knot ===</code> 。</p>
 <p>（右侧等号是可选的，结点标题的名称是不能有空格的单词。注，不支持中文。）</p>
 <p>结点标记下的内容均属于这个结点。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">=== back_in_london === // 结点：回到伦敦
-
-我们晚上九点四十五准时到了 London 。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#f92672">===</span> back_in_london <span style="color:#f92672">===</span> <span style="color:#75715e">// 结点：回到伦敦
+</span><span style="color:#75715e"></span>
+<span style="color:#960050;background-color:#1e0010">我们晚上九点四十五准时到了伦敦。</span>
 </code></pre></div><h3 id="进阶从始至终"><strong>进阶</strong>：从始至终</h3>
 <p><strong>Advanced: a knottier &ldquo;hello world&rdquo;</strong></p>
 <p>当你启动一个 ink 文件，结点外的内容会被自动运行，而结点不会。因此如果你开篇就是结点，就要告诉游戏从哪开始。我们要用一个跳转箭头 <code>-&gt;</code> ，下一节会具体说明。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">-&gt; top_knot
+<pre><code>-&gt; top_knot
 
 === top_knot ===
-Hello world!
-</code></pre></div><p>除此之外，ink 不喜欢“不实在的结尾”（loose end），当识别到时会发出如下的警告：</p>
+Hello world！
+</code></pre><p>除此之外，ink 不喜欢“不实在的结尾”（loose end），当识别到时会发出如下的警告：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">WARNING: Apparent loose end exists where the flow runs out. Do you need a &#39;-&gt; END&#39; statement, choice or divert? on line 3 of tests/test.ink
 </code></pre></div><p>运行时则是这样的：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Runtime error in tests/test.ink line 3: ran out of content. Do you need a &#39;-&gt; DONE&#39; or &#39;-&gt; END&#39;?
 </code></pre></div><p>这样就不会报错了：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">=== top_knot ===
-Hello world!
+<pre><code>=== top_knot ===
+Hello world！
 -&gt; END
-</code></pre></div><p><code>-&gt; END</code> 同时是作者与编译器的标记，它意味着“故事线到这就结束了”。</p>
+</code></pre><p><code>-&gt; END</code> 同时是作者与编译器的标记，它意味着“故事线到这就结束了”。</p>
 
 
 <footer class="footline">
@@ -850,6 +892,41 @@ Hello world!
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -860,9 +937,6 @@ Hello world!
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -887,7 +961,7 @@ Hello world!
 			<a class="nav nav-prev" href="/doc/basics/choices/" title="选项 Choices"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/fourth/" title="资源索引" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/doc/basics/diverts/" title="跳转 Divert" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -897,16 +971,16 @@ Hello world!
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1616318305"></script>
-    <script src="/js/perfect-scrollbar.min.js?1616318305"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1616318305"></script>
-    <script src="/js/jquery.sticky.js?1616318305"></script>
-    <script src="/js/featherlight.min.js?1616318305"></script>
-    <script src="/js/highlight.pack.js?1616318305"></script>
+    <script src="/js/clipboard.min.js?1616337723"></script>
+    <script src="/js/perfect-scrollbar.min.js?1616337723"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1616337723"></script>
+    <script src="/js/jquery.sticky.js?1616337723"></script>
+    <script src="/js/featherlight.min.js?1616337723"></script>
+    <script src="/js/highlight.pack.js?1616337723"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1616318305"></script>
-    <script src="/js/learn.js?1616318305"></script>
-    <script src="/js/hugo-learn.js?1616318305"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1616337723"></script>
+    <script src="/js/learn.js?1616337723"></script>
+    <script src="/js/hugo-learn.js?1616337723"></script>
     
     
   </body>
