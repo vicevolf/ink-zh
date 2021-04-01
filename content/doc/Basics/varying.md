@@ -114,3 +114,69 @@ Runtime error in tests/test.ink line 6: ran out of content. Do you need a '-> DO
 * [聊孩子] -> chat_children 
 + -> sit_in_silence_again // ✨ 固定选项 & 固定选项
 ```
+---
+
+## 1.7.4 条件选项
+
+你可以控制选项是否可选。ink 有很多逻辑可用，但最简单的是“玩家是否经历过特定内容”。
+
+每个结点或针脚在游戏中都有唯一的地址（因此可以跳转到），并且我们可用相同的地址检测玩家是否经历过这块内容。
+
+```
+* { not visit_paris } [前往巴黎] -> visit_paris // 条件：没有经历过 参观巴黎结点
++ { visit_paris } [返回巴黎] -> visit_paris // 条件：经历过 参观巴黎结点
+  
+* { visit_paris.met_estelle } [打电话给埃斯特尔女士] -> phone_estelle // 条件：经历过 参观巴黎结点，见到埃斯特尔针脚
+```
+
+注意，一旦玩家经历过结点中的任何针脚，检测结点名称时都会是 true 。
+
+还要注意，条件选项不会覆盖一次性选项，因此在需要重复时你依然需要固定选项。
+
+### 进阶：多重条件
+
+**Advanced: multiple conditions**
+
+你也可以让一个选项有多个条件检测；如果这么做了，必须所有的检测都通过才会显示选项。
+
+```
+* { not visit_paris } [前往巴黎] -> visit_paris // 条件：没有经历过 参观巴黎结点
++ { visit_paris } { not bored_of_paris } [返回巴黎] -> visit_paris // 条件：经历过 参观巴黎结点；并且，没经历过 厌倦巴黎结点
+```
+### 逻辑运算符：AND OR
+
+**Logical operators: AND and OR**
+
+上面的“多重条件”实际上是条件用了编程的 AND 运算符。ink 通常支持 `and`（或写成 `&&`）以及 `or`（或写成 `||`），还有括号。
+
+```
+* { not (visit_paris or visit_rome) && (visit_london || visit_new_york) } [等等，去哪？我有些困惑。] -> visit_someplace
+// { 非 （参观巴黎 或 参观罗马） 与 （参观伦敦 或 参观纽约）} ，即“不满足巴黎或罗马至少去过一个，并且伦敦或纽约至少去过一个”。
+```
+
+对于非编程人员而言，X `and` Y 必须都是 true 才会得到 true。X `or` Y 其中有一个 true 就是 true 了。我们不支持 `xor` 运算符。（注，xor 指“异或”，两个值不相同，结果为 true。两个值相同，结果为 false。）
+
+你也可以用 `!` 表示 `not` 运算符，但考虑到可能与“一次性可变文本” `{!text}` 混淆，我们推荐使用 `not`。（注，not 运算如是 true 则得到 false，反之亦然。）
+
+### 进阶：结点或针脚标签实际上有计数
+
+**Advanced: knot/stitch labels are actually read counts**
+
+```
+* {seen_clue} [指控杰克逊先生] // 条件：经历过 看到线索结点
+```
+实际上，条件这里的检测并非 true 或 false，而是整数。结点或针脚有个整数变量，记录玩家经历这个地址的次数。
+
+如果它不是 0 ，就会在上面得检测返回 true，但你也可更具体些：
+
+```
+* {seen_clue > 3} [指控杰克逊先生] // 条件：经历过3次以上 看到线索结点
+```
+
+### 进阶：更多逻辑
+
+**Advanced: more logic**
+
+Ink 支持的逻辑与条件要比这里多 —— 详见 “变量与逻辑”。
+
+
