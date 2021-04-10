@@ -3,6 +3,7 @@ title: "Ink 中文文档"
 description: "test post index"
 date: 2020-01-11T14:09:21+09:00
 draft: false
+editBaseURL: "https://github.com/volfclub/ink-zh/blob/main/content/zh/docs/_index.md#"
 ---
 
 ink 是一门围绕标记纯文本展开的脚本语言，以生成互动脚本。
