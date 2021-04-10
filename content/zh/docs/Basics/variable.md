@@ -1,5 +1,5 @@
 ---
-title: "1.7 可变文本 Variable Text"
+title: "1.8 可变文本 Variable Text"
 date: 2021-03-20
 weight: 17
 ---
