@@ -1,80 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>快速上手 on Inky 中文指南 - 编程魔法师</title>
+    <title>Docs on ink.Magicoder.org - ink 中文指南</title>
     <link>https://ink.magicoder.org/learn/</link>
-    <description>Recent content in 快速上手 on Inky 中文指南 - 编程魔法师</description>
+    <description>Recent content in Docs on ink.Magicoder.org - ink 中文指南</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Mar 2021 15:09:55 +0800</lastBuildDate><atom:link href="https://ink.magicoder.org/learn/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>准备 Inky</title>
-      <link>https://ink.magicoder.org/learn/get-inky/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/learn/get-inky/</guid>
-      <description>获取 Inky Ink 是一门讲故事的“语言”。
-我们要用 Ink 语言的官方编辑器 Inky 进行创作，这只需简单的3步：
- 下载最新版 Inky，支持 Windows，macOS，Linux ； 解压下载好的压缩包到合适的位置； 以 Windows 为例，双击运行 Inky.exe 。  你会发现，Inky 直接启动就绪了 —— 是款免安装的“绿色软件”，这也是为什么本节标题不叫“安装 Inky”的原因。
-🔎 展开 Inky 界面… Inky 是左右双栏的编辑器，在左栏编辑攥写，在右栏实时预览。此时 Inky 在左栏已预置了些内容（虽然不是 Hello World），你可以随意编辑试试写写看；并点击右栏里的预览看看会发生什么。
-🔎 展开 预置内容…Once upon a time... * There were two choices. * There were four lines of content. - They lived happily ever after.</description>
-    </item>
+    <language>zh</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 11 Jan 2020 14:09:21 +0900</lastBuildDate>
     
-    <item>
-      <title>注释 Todo</title>
-      <link>https://ink.magicoder.org/learn/comments-todo/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/learn/comments-todo/</guid>
-      <description>注释 Comments 学 Ink 前肯定要先学注释 Comments 的。
-因为注释是人机交流中，我们与人或自己的交流方式…… 说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”
-✨ 在 Ink 中，用两个斜杠 // 表示这行后面都是注释，用 /* */ 表示这一段都是注释。方便起见，你也可按 Ctrl+/ 快速注释内容。
-“你怎么看？” 她问。 // 一行注释 “我无法评论（comment），” 我答。 /* ……或者一段注释 */ 比如在上一节，我就用注释告诉你“这是节点”。
-=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 &amp;quot;我们去环游世界！&amp;quot; 也许你会担心，如果把我想的让读者玩家看到了，比如之前说想“写个伏笔”，那怎么办？
-事实上也像我们前面说的，“注释是与人交流的方式”，Inky 作为机器看到你写的 Ink 注释会完全忽略掉。而其他读者看到的是经过 Inky 加工后的网页，自然也不会看到这些注释了。如下图，我们注释的内容都不会出现在预览区。
-✨ 注释不会被 Inky 读取运行，也不会展示给读者玩家。
-你在哪里最常见到双斜杠，网址对吧？如 https://ink.magicoder.org/learn 。为了让你的网址不会一半变成注释，你需要转义字符，将 // 输入为 \/\/ ，例 https:\/\/ink.magicoder.org/learn 。我会在后面用到链接的地方再贴心的提醒一次。
-Let&amp;rsquo;s Do 👨‍💻 深夜，你独自走在回家的路上。前面的路口好像有什么东西在动… 好像，好像是一头……可怕的， 狼！是狼啊！  深夜独自一人在路上遇到狼真是太吓人了。哼…不能让它得逞吓到更多读者玩家！
- 请你用刚学的注释，让“可怕的，”在 Inky 预览区消失。</description>
-    </item>
+        <atom:link href="https://ink.magicoder.org/learn/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>结点 跳转 ★</title>
-      <link>https://ink.magicoder.org/learn/knots-divert/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/learn/knots-divert/</guid>
-      <description>结点 Knots 故事是由一段段剧情构成的，而 Ink 是由一个个结点 Knots 组成的。
-✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
-结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复。
-例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
-结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。
-结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
-=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
-🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
- 跳转 Divert 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
-✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
-如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
-    </item>
     
-    <item>
-      <title>选项 条件 ★</title>
-      <link>https://ink.magicoder.org/learn/choices-conditions/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+    
       
-      <guid>https://ink.magicoder.org/learn/choices-conditions/</guid>
-      <description>选项 Choices 故事是由一段段剧情构成的，而 Ink 是由一个个结点 Knots 组成的。
-✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
-结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复。
-例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
-结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。
-结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
-=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
-🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
- 条件 Conditions 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
-✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
-如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
-    </item>
+      <item>
+        <title>Depth 1</title>
+        <link>https://ink.magicoder.org/learn/depth1/</link>
+        <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/depth1/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Getting Started</title>
+        <link>https://ink.magicoder.org/learn/gettingstarted/</link>
+        <pubDate>Tue, 28 Jan 2020 00:34:39 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/gettingstarted/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Content Management</title>
+        <link>https://ink.magicoder.org/learn/contentmanagement/</link>
+        <pubDate>Tue, 28 Jan 2020 00:36:39 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/contentmanagement/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Related content</title>
+        <link>https://ink.magicoder.org/learn/relatedcontent/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/relatedcontent/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Page Resources</title>
+        <link>https://ink.magicoder.org/learn/pageresources/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/pageresources/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Page Bundles</title>
+        <link>https://ink.magicoder.org/learn/pagebundles/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/pagebundles/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Content Formats</title>
+        <link>https://ink.magicoder.org/learn/contentfortmats/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:51 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/contentfortmats/</guid>
+        <description>Markdown here 我爱你</description>
+      </item>
+      
+      <item>
+        <title>Image Processing</title>
+        <link>https://ink.magicoder.org/learn/imageprocessing/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/imageprocessing/</guid>
+        <description>Markdown here</description>
+      </item>
+      
     
   </channel>
 </rss>

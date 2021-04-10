@@ -1,0 +1,17 @@
+[[main]]
+  identifier = "docs"
+  name = "中文文档"
+  url = "docs"
+  weight = 1
+
+[[main]]
+  identifier = "learn"
+  name = "快速入门"
+  url = "learn"
+  weight = 2
+
+[[main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "blog"
+  weight = 3

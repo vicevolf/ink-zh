@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. 基础 Basis on ink.Magicoder.org - ink 中文指南</title>
+    <link>https://ink.magicoder.org/docs/basics/</link>
+    <description>Recent content in 1. 基础 Basis on ink.Magicoder.org - ink 中文指南</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://ink.magicoder.org/docs/basics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>1.1 内容 Content</title>
+        <link>https://ink.magicoder.org/docs/basics/content/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/content/</guid>
+        <description>1.1.1 最简单的 ink 脚本 The simplest ink script 最基本的 ink 脚本就是 .ink 文件中的普通文本而已： Hello, world! 当运行时，它们会输出为内容，然后停止。 每行文本都会生成新段落。例如： 1</description>
+      </item>
+      
+      <item>
+        <title>1.2 选项 Choices</title>
+        <link>https://ink.magicoder.org/docs/basics/choices/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/choices/</guid>
+        <description>1.2.1 最简单的 ink 选项 可通过文字选项让玩家输入。文字选项用星号 * 标记 。 如无其他指示，选项会在下一行出现。 1 2 3 Hello world! * Hello back! Nice to hear from you! 1 2 3 4 5 6 Hello world</description>
+      </item>
+      
+      <item>
+        <title>1.3 结点 Knots</title>
+        <link>https://ink.magicoder.org/docs/basics/knots/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/knots/</guid>
+        <description>1.3.1 内容片段被称作结点 Pieces of content are called knots 为了让游戏有分支，我们需要给内容片段标记上标题。 这些内容片段叫做“结点”，是 ink 最基本的结构单元。 1.3.2 写个结点 Writing</description>
+      </item>
+      
+      <item>
+        <title>1.4 跳转 Divert</title>
+        <link>https://ink.magicoder.org/docs/basics/diverts/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/diverts/</guid>
+        <description>1.4.1 结点跳转结点 Knots divert to knots 你可以用跳转箭头 -&amp;gt; 告诉故事从一个结点到另一个结点。跳转无需用户输入会立即生效。 === back_in_london === // 结点：回到伦敦 我们晚上九点四十五</description>
+      </item>
+      
+      <item>
+        <title>1.5 分支 Branching</title>
+        <link>https://ink.magicoder.org/docs/basics/branching/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/branching/</guid>
+        <description>Branching The Flow 1.5.1 基础分支 Basic branching 用结点，选项与跳转来组成 choose-your-own 游戏的基础结构。 === paragraph_1 === // 结点：第一段 你手握宝剑，站在墙边。 * [打开大门] -&amp;gt; 跳转到结点：第二段 *</description>
+      </item>
+      
+      <item>
+        <title>1.6 针脚 Stitches</title>
+        <link>https://ink.magicoder.org/docs/basics/stitches/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/stitches/</guid>
+        <description>Includes and Stitches 1.6.1 结点可有子结点 Knots can be subdivided 随着故事越来越长，在没有其他结构的情况下会越来越乱，难以保持秩序。 结点可以包括被称为“针脚”的子结点。它们用单</description>
+      </item>
+      
+      <item>
+        <title>1.7 可变选项 Varying Choices</title>
+        <link>https://ink.magicoder.org/docs/basics/varying/</link>
+        <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/varying/</guid>
+        <description>1.7.1 一次性选项 Choices can only be used once 通常情况下，游戏中的每个选项只能选一次。如果你的故事中没有循环，你很难注意到这个特性。但如果你用了循环，很快你会注意</description>
+      </item>
+      
+      <item>
+        <title>1.7 可变文本 Variable Text</title>
+        <link>https://ink.magicoder.org/docs/basics/variable/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/variable/</guid>
+        <description>1.8.1 文本是可变的 Text can vary 到目前为止，内容都是静止固定的文本。但在输出时，文本其实也是可变的。 序列，循环，可变 Sequences, cycles and other alternatives 最简单的可变文本，是按一定</description>
+      </item>
+      
+    
+  </channel>
+</rss>

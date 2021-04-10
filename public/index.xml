@@ -1,184 +1,316 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>欢迎 on Inky 中文指南 - 编程魔法师</title>
+    <title>Z Themes on ink.Magicoder.org - ink 中文指南</title>
     <link>https://ink.magicoder.org/</link>
-    <description>Recent content in 欢迎 on Inky 中文指南 - 编程魔法师</description>
+    <description>Recent content in Z Themes on ink.Magicoder.org - ink 中文指南</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Mar 2021 15:09:55 +0800</lastBuildDate><atom:link href="https://ink.magicoder.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>测试</title>
-      <link>https://ink.magicoder.org/first/first-content/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/first/first-content/</guid>
-      <description>有什么呢？</description>
-    </item>
+    <language>zh</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 26 Jan 2020 04:15:05 +0900</lastBuildDate>
     
-    <item>
-      <title>内容 Content</title>
-      <link>https://ink.magicoder.org/doc/basics/content/</link>
-      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/doc/basics/content/</guid>
-      <description>1.1.1 最简单的 ink 脚本 The simplest ink script
-最基本的 ink 脚本就是 .ink 文件中的普通文本而已：
-Hello, world! 当运行时，它们会输出为内容，然后停止。
-每行文本都会生成新段落。例如：
-Hello, world! Hello? Hello, are you there? 输出的内容看起来与文本一模一样的。
- 1.1.2 注释 Comments 通常文件中的所有文本都会输出为内容，除非有特殊标记。
-最简单的语法标记是注释。Ink 支持两种注释方式。它们是方便人们阅读代码用的，而编译器会将它们忽略。
-“你怎么看？”她问。 // 不会被输出的内容… “我无法评论（comment），”我答。 /* …或是无行数行数限制的文本块 */ 另一种则是用于提醒作者还要去做什么，会被编译器提醒：
-TODO: 这块认真写！  1.1.3 标识 Tags 当引擎运行时，文本会按原样呈现。不过有时我们需要标记一行内容提供额外的信息，告诉游戏该怎么运行。
-ink 提供了一个简单的系统，使用井号 # 为内容添加标识。
-一行普通的游戏内文本。 # colour it blue 它们不会被展示在内容中，但可被游戏读取到，以便你按需使用。详见 RunningYourInk 。</description>
-    </item>
+        <atom:link href="https://ink.magicoder.org/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>选项 Choices</title>
-      <link>https://ink.magicoder.org/doc/basics/choices/</link>
-      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/doc/basics/choices/</guid>
-      <description>1.2.1 最简单的 ink 选项 可通过文字选项让玩家输入。文字选项用星号 * 标记 。
-如无其他指示，选项会在下一行出现。
-Hello world! *	Hello back! Nice to hear from you! Hello world 1: Hello back! ▶ 1 Hello back! Nice to hear from you. 默认情况下，选项的文本也会再次输出到内容中。
- 1.2.2 不输出文本的选项 Suppressing choice text
-一些游戏文本内容与选项是分开的。在 ink 中，如用方括号 [] 括起来，选项的文本不会输出到内容中。
-Hello world! * [Hello back!] Nice to hear from you! Hello world 1: Hello back! ▶ 1 Nice to hear from you. 进阶：混合选项与输出文本 Advanced: mixing choice and output text</description>
-    </item>
     
-    <item>
-      <title>结点 Knots</title>
-      <link>https://ink.magicoder.org/doc/basics/knots/</link>
-      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
-      
-      <guid>https://ink.magicoder.org/doc/basics/knots/</guid>
-      <description>1.3.1 内容片段被称作结点 Pieces of content are called knots
-为了让游戏有分支，我们需要给内容片段标记上标题。
-这些内容片段叫做“结点”，是 ink 最基本的结构单元。
- 1.3.2 写个结点 Writing a knot 结点的开头由两个或更多等号 == 构成，例如 === top_knot === 。
-（右侧等号是可选的，结点标题的名称是不能有空格的单词。注，不支持中文。）
-结点标记下的内容均属于这个结点。
-=== back_in_london === // 结点：回到伦敦  我们晚上九点四十五准时到了伦敦。 进阶：从始至终 Advanced: a knottier &amp;ldquo;hello world&amp;rdquo;
-当你启动一个 ink 文件，结点外的内容会被自动运行，而结点不会。因此如果你开篇就是结点，就要告诉游戏从哪开始。我们要用一个跳转箭头 -&amp;gt; ，下一节会具体说明。
--&amp;gt; top_knot === top_knot === Hello world！ 除此之外，ink 不喜欢“不实在的结尾”（loose end），当识别到时会发出如下的警告：
-WARNING: Apparent loose end exists where the flow runs out. Do you need a &amp;#39;-&amp;gt; END&amp;#39; statement, choice or divert?</description>
-    </item>
     
-    <item>
-      <title>准备 Inky</title>
-      <link>https://ink.magicoder.org/learn/get-inky/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
       
-      <guid>https://ink.magicoder.org/learn/get-inky/</guid>
-      <description>获取 Inky Ink 是一门讲故事的“语言”。
-我们要用 Ink 语言的官方编辑器 Inky 进行创作，这只需简单的3步：
- 下载最新版 Inky，支持 Windows，macOS，Linux ； 解压下载好的压缩包到合适的位置； 以 Windows 为例，双击运行 Inky.exe 。  你会发现，Inky 直接启动就绪了 —— 是款免安装的“绿色软件”，这也是为什么本节标题不叫“安装 Inky”的原因。
-🔎 展开 Inky 界面… Inky 是左右双栏的编辑器，在左栏编辑攥写，在右栏实时预览。此时 Inky 在左栏已预置了些内容（虽然不是 Hello World），你可以随意编辑试试写写看；并点击右栏里的预览看看会发生什么。
-🔎 展开 预置内容…Once upon a time... * There were two choices. * There were four lines of content. - They lived happily ever after.</description>
-    </item>
-    
-    <item>
-      <title>跳转 Divert</title>
-      <link>https://ink.magicoder.org/doc/basics/diverts/</link>
-      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      <item>
+        <title>May 2019</title>
+        <link>https://ink.magicoder.org/updates/2019_may/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/updates/2019_may/</guid>
+        <description>Markdown here</description>
+      </item>
       
-      <guid>https://ink.magicoder.org/doc/basics/diverts/</guid>
-      <description>1.4.1 结点跳转结点 Knots divert to knots
-你可以用跳转箭头 -&amp;gt; 告诉故事从一个结点到另一个结点。跳转无需用户输入会立即生效。
-=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了伦敦。 -&amp;gt; hurry_home // 跳转到结点：赶回家 === hurry_home === // 结点：赶回家 我们尽可能的快赶回了在裁缝街的家。  1.4.2 跳转是无感的 Diverts are invisible
-跳转是无缝的，甚至可发生在一句话中：
-=== hurry_home === // 结点：赶回家 我们赶回了在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快 === as_fast_as_we_could === // 结点：尽可能的快 尽可能的快。 我们赶回在裁缝街的家尽可能的快。  1.4.3 胶水 Glue 通常会在每行新内容之间插入换行符。然而某些情况下，内容必须在同一行，可用胶水 &amp;lt;&amp;gt; 将其连接。
-=== hurry_home === // 结点：赶回家 我们赶回 &amp;lt;&amp;gt;// 使用胶水 -&amp;gt; to_savile_row // 跳转到结点：在裁缝街 === to_savile_row === // 结点：在裁缝街 在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快 === as_fast_as_we_could === // 结点：尽可能的快 &amp;lt;&amp;gt; 尽可能的快。// 使用胶水 我们赶回在裁缝街的家尽可能的快。 你不能用过多的胶水：相邻的多个胶水没有额外的效果。（也没办法解除胶水；一旦粘在同一行，就是粘住了。）</description>
-    </item>
-    
-    <item>
-      <title>分支 Branching</title>
-      <link>https://ink.magicoder.org/doc/basics/branching/</link>
-      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      <item>
+        <title>Basic Usage</title>
+        <link>https://ink.magicoder.org/learn/gettingstarted/basicusage/</link>
+        <pubDate>Tue, 28 Jan 2020 00:34:51 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/gettingstarted/basicusage/</guid>
+        <description>Markdown here</description>
+      </item>
       
-      <guid>https://ink.magicoder.org/doc/basics/branching/</guid>
-      <description>Branching The Flow
-1.5.1 基础分支 Basic branching 用结点，选项与跳转来组成 choose-your-own 游戏的基础结构。
-=== paragraph_1 === // 结点：第一段 你手握宝剑，站在墙边。 * [打开大门] -&amp;gt; 跳转到结点：第二段 * [破门而入] -&amp;gt; 跳转到结点：第三段 * [转身回家] -&amp;gt; 跳转到结点：第四段 === paragraph_2 === // 结点：第二段 你打开大门，走上小路 ……  1.5.2 分支与合并 Branching and joining 使用跳转，作者可让故事线分支，也能让其再次合并，不会展示给玩家故事线已合并。
-=== back_in_london === // 结点：回到伦敦 我们晚上九点四十五准时到了伦敦。 * “没时间耽误了！”[] 我喊道。 -&amp;gt; hurry_outside // 跳转到结点：赶到外面 * “先生，让我们享受这一刻吧！”[] 我喊道。 我的住人用力敲了下我的脑袋，把我拽到了门外。 -&amp;gt; dragged_outside // 跳转到结点：拽到外面 * [我们赶回家] -&amp;gt; hurry_outside === hurry_outside === // 结点：赶到外面 我们赶回在裁缝街的家 -&amp;gt; as_fast_as_we_could // 跳转到结点：尽可能的快 === dragged_outside === //结点：拽到外面 他坚持要我们赶回在裁缝街的家 -&amp;gt; as_fast_as_we_could 跳转到结点：尽可能的快 === as_fast_as_we_could === //结点：我们尽快 &amp;lt;&amp;gt; 尽可能的快。  1.</description>
-    </item>
-    
-    <item>
-      <title>注释 Todo</title>
-      <link>https://ink.magicoder.org/learn/comments-todo/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+      <item>
+        <title>April 2019</title>
+        <link>https://ink.magicoder.org/updates/2019_april/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:48 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/updates/2019_april/</guid>
+        <description>Markdown here</description>
+      </item>
       
-      <guid>https://ink.magicoder.org/learn/comments-todo/</guid>
-      <description>注释 Comments 学 Ink 前肯定要先学注释 Comments 的。
-因为注释是人机交流中，我们与人或自己的交流方式…… 说人话就是你总得看懂这行代码是什么意思吧？比如你终于写完了一个百万长篇，回到开头一看“咦，这里我为啥这样写？”；或者你和小伙伴一起写故事，有个片段是你的伏笔，不想被小伙伴改，你就的注释上一句，“这段话是伏笔不要动。”
-✨ 在 Ink 中，用两个斜杠 // 表示这行后面都是注释，用 /* */ 表示这一段都是注释。方便起见，你也可按 Ctrl+/ 快速注释内容。
-“你怎么看？” 她问。 // 一行注释 “我无法评论（comment），” 我答。 /* ……或者一段注释 */ 比如在上一节，我就用注释告诉你“这是节点”。
-=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 &amp;quot;我们去环游世界！&amp;quot; 也许你会担心，如果把我想的让读者玩家看到了，比如之前说想“写个伏笔”，那怎么办？
-事实上也像我们前面说的，“注释是与人交流的方式”，Inky 作为机器看到你写的 Ink 注释会完全忽略掉。而其他读者看到的是经过 Inky 加工后的网页，自然也不会看到这些注释了。如下图，我们注释的内容都不会出现在预览区。
-✨ 注释不会被 Inky 读取运行，也不会展示给读者玩家。
-你在哪里最常见到双斜杠，网址对吧？如 https://ink.magicoder.org/learn 。为了让你的网址不会一半变成注释，你需要转义字符，将 // 输入为 \/\/ ，例 https:\/\/ink.magicoder.org/learn 。我会在后面用到链接的地方再贴心的提醒一次。
-Let&amp;rsquo;s Do 👨‍💻 深夜，你独自走在回家的路上。前面的路口好像有什么东西在动… 好像，好像是一头……可怕的， 狼！是狼啊！  深夜独自一人在路上遇到狼真是太吓人了。哼…不能让它得逞吓到更多读者玩家！
- 请你用刚学的注释，让“可怕的，”在 Inky 预览区消失。</description>
-    </item>
-    
-    <item>
-      <title>结点 跳转 ★</title>
-      <link>https://ink.magicoder.org/learn/knots-divert/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+      <item>
+        <title>Configuration</title>
+        <link>https://ink.magicoder.org/learn/gettingstarted/configuration/</link>
+        <pubDate>Tue, 28 Jan 2020 00:34:56 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/gettingstarted/configuration/</guid>
+        <description>Markdown here</description>
+      </item>
       
-      <guid>https://ink.magicoder.org/learn/knots-divert/</guid>
-      <description>结点 Knots 故事是由一段段剧情构成的，而 Ink 是由一个个结点 Knots 组成的。
-✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
-结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复。
-例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
-结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。
-结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
-=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
-🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
- 跳转 Divert 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
-✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
-如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
-    </item>
-    
-    <item>
-      <title>选项 条件 ★</title>
-      <link>https://ink.magicoder.org/learn/choices-conditions/</link>
-      <pubDate>Sat, 06 Mar 2021 15:09:55 +0800</pubDate>
+      <item>
+        <title>March 2019</title>
+        <link>https://ink.magicoder.org/updates/2019_march/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:42 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/updates/2019_march/</guid>
+        <description>Markdown here</description>
+      </item>
       
-      <guid>https://ink.magicoder.org/learn/choices-conditions/</guid>
-      <description>选项 Choices 故事是由一段段剧情构成的，而 Ink 是由一个个结点 Knots 组成的。
-✨ 结点是组成 Ink 最基础的部分，由两个等号 == 加结点名称表示。
-结点左侧至少要有两个等号；结点的名称仅支持英文，不允许有空格，不允许有重复。
-例如，=== london === 或 == london 都是正确的；=== lon don == 或 == 伦敦 是错误的。
-结点标记下的内容均属于这个结点，就像是故事的章节段落一样，放多少字由你自己决定。
-结点的名称类似于前面的注释，不会展示给读者玩家。所以请放心清楚地给结点起名字吧，无需担心剧透的问题。
-=== london === //这是节点 Phileas Fogg 先生早早从改革俱乐部回到了家，并乘坐了新型的蒸汽运输机！ “领航,” 他喊到。 “我们去环游世界！” Inky 会将已识别的语法标记变为蓝色，提醒你输入正确且便于区分。你在 Inky 中输入的结点变蓝了吗？
-🤔 什么，你说你的 Inky 编辑器和例图不一样 —— 虽然结点变蓝了，但底部多了一行红色报错？预览区也没显示内容，只有个“End of story”？请先记住这两个问题继续学习，我们会在本页靠下的位置为你解答。
- 条件 Conditions 故事的每段剧情之间会有承接过渡，而 Ink 的结点之间则有跳转 divert 串了起来。
-✨ 跳转用跳转箭头（减号和右尖括号） -&amp;gt; 表示，指向结点的名称。
-如，-&amp;gt; london ，表示运行到这要跳转到 结点 london 继续运行。</description>
-    </item>
-    
-    <item>
-      <title>针脚 Stitches</title>
-      <link>https://ink.magicoder.org/doc/basics/stitches/</link>
-      <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+      <item>
+        <title>Installation</title>
+        <link>https://ink.magicoder.org/learn/gettingstarted/installation/</link>
+        <pubDate>Tue, 28 Jan 2020 00:34:13 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/gettingstarted/installation/</guid>
+        <description>Markdown here</description>
+      </item>
       
-      <guid>https://ink.magicoder.org/doc/basics/stitches/</guid>
-      <description>Includes and Stitches
-1.6.1 结点可有子结点 Knots can be subdivided
-随着故事越来越长，在没有其他结构的情况下会越来越乱，难以保持秩序。
-结点可以包括被称为“针脚”的子结点。它们用单个等号 = 标记。
-=== the_orient_express === // 结点：东方快车 = in_first_class // 针脚：头等厢 …… = in_third_class // 针脚：三等厢 …… = in_the_guards_van // 针脚：警务车厢 …… = missed_the_train // 针脚：错过火车 …… 例如可以将场景作结点，里面的事件作为针脚。
- 1.6.2 针脚有唯一的名称 Stitches have unique names
-针脚可跳转到它的“位置”（address）。
-* [前往三等厢] -&amp;gt; the_orient_express.in_third_class // 跳转到针脚：东方快车结点，三等厢针脚 * [前往警务车厢] -&amp;gt; the_orient_express.in_the_guards_van //跳转到针脚： 东方快车结点，警务车厢针脚  1.6.3 第一个针脚是默认的 The first stitch is the default
-如果结点内包含针脚，会默认跳转到结点内的第一个针脚。
-* [前往头等厢] “头等厢, 先生。 还有其他地方吗？” -&amp;gt; the_orient_express // 跳转到结点：东方快车 等同于（&amp;hellip;除非我们改变结点内针脚的顺序！）：</description>
-    </item>
+      <item>
+        <title>February 2019</title>
+        <link>https://ink.magicoder.org/updates/2019_february/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:37 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/updates/2019_february/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Quick Start</title>
+        <link>https://ink.magicoder.org/learn/gettingstarted/quickstart/</link>
+        <pubDate>Tue, 28 Jan 2020 00:34:41 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/gettingstarted/quickstart/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>January 2019</title>
+        <link>https://ink.magicoder.org/updates/2019_january/</link>
+        <pubDate>Tue, 28 Jan 2020 00:10:09 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/updates/2019_january/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Test 1</title>
+        <link>https://ink.magicoder.org/learn/depth1/test1/</link>
+        <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/depth1/test1/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Test 2</title>
+        <link>https://ink.magicoder.org/learn/depth1/depth2/test2/</link>
+        <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/depth1/depth2/test2/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>Test 3</title>
+        <link>https://ink.magicoder.org/learn/depth1/depth2/depth3/test3/</link>
+        <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/depth1/depth2/depth3/test3/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>ttttest</title>
+        <link>https://ink.magicoder.org/learn/depth1/ttttest/</link>
+        <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/depth1/ttttest/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>1.1 内容 Content</title>
+        <link>https://ink.magicoder.org/docs/basics/content/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/content/</guid>
+        <description>1.1.1 最简单的 ink 脚本 The simplest ink script 最基本的 ink 脚本就是 .ink 文件中的普通文本而已： Hello, world! 当运行时，它们会输出为内容，然后停止。 每行文本都会生成新段落。例如： 1</description>
+      </item>
+      
+      <item>
+        <title>1.2 选项 Choices</title>
+        <link>https://ink.magicoder.org/docs/basics/choices/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/choices/</guid>
+        <description>1.2.1 最简单的 ink 选项 可通过文字选项让玩家输入。文字选项用星号 * 标记 。 如无其他指示，选项会在下一行出现。 1 2 3 Hello world! * Hello back! Nice to hear from you! 1 2 3 4 5 6 Hello world</description>
+      </item>
+      
+      <item>
+        <title>1.3 结点 Knots</title>
+        <link>https://ink.magicoder.org/docs/basics/knots/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/knots/</guid>
+        <description>1.3.1 内容片段被称作结点 Pieces of content are called knots 为了让游戏有分支，我们需要给内容片段标记上标题。 这些内容片段叫做“结点”，是 ink 最基本的结构单元。 1.3.2 写个结点 Writing</description>
+      </item>
+      
+      <item>
+        <title>1.4 跳转 Divert</title>
+        <link>https://ink.magicoder.org/docs/basics/diverts/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/diverts/</guid>
+        <description>1.4.1 结点跳转结点 Knots divert to knots 你可以用跳转箭头 -&amp;gt; 告诉故事从一个结点到另一个结点。跳转无需用户输入会立即生效。 === back_in_london === // 结点：回到伦敦 我们晚上九点四十五</description>
+      </item>
+      
+      <item>
+        <title>1.5 分支 Branching</title>
+        <link>https://ink.magicoder.org/docs/basics/branching/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/branching/</guid>
+        <description>Branching The Flow 1.5.1 基础分支 Basic branching 用结点，选项与跳转来组成 choose-your-own 游戏的基础结构。 === paragraph_1 === // 结点：第一段 你手握宝剑，站在墙边。 * [打开大门] -&amp;gt; 跳转到结点：第二段 *</description>
+      </item>
+      
+      <item>
+        <title>1.6 针脚 Stitches</title>
+        <link>https://ink.magicoder.org/docs/basics/stitches/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/stitches/</guid>
+        <description>Includes and Stitches 1.6.1 结点可有子结点 Knots can be subdivided 随着故事越来越长，在没有其他结构的情况下会越来越乱，难以保持秩序。 结点可以包括被称为“针脚”的子结点。它们用单</description>
+      </item>
+      
+      <item>
+        <title>1.7 可变选项 Varying Choices</title>
+        <link>https://ink.magicoder.org/docs/basics/varying/</link>
+        <pubDate>Sat, 20 Mar 2021 15:09:55 +0800</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/varying/</guid>
+        <description>1.7.1 一次性选项 Choices can only be used once 通常情况下，游戏中的每个选项只能选一次。如果你的故事中没有循环，你很难注意到这个特性。但如果你用了循环，很快你会注意</description>
+      </item>
+      
+      <item>
+        <title>1.7 可变文本 Variable Text</title>
+        <link>https://ink.magicoder.org/docs/basics/variable/</link>
+        <pubDate>Sat, 20 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/variable/</guid>
+        <description>1.8.1 文本是可变的 Text can vary 到目前为止，内容都是静止固定的文本。但在输出时，文本其实也是可变的。 序列，循环，可变 Sequences, cycles and other alternatives 最简单的可变文本，是按一定</description>
+      </item>
+      
+      <item>
+        <title>Related content</title>
+        <link>https://ink.magicoder.org/learn/relatedcontent/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/relatedcontent/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Page Resources</title>
+        <link>https://ink.magicoder.org/learn/pageresources/</link>
+        <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/pageresources/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Page Bundles</title>
+        <link>https://ink.magicoder.org/learn/pagebundles/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/pagebundles/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Content Formats</title>
+        <link>https://ink.magicoder.org/learn/contentfortmats/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:51 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/contentfortmats/</guid>
+        <description>Markdown here 我爱你</description>
+      </item>
+      
+      <item>
+        <title>Image Processing</title>
+        <link>https://ink.magicoder.org/learn/imageprocessing/</link>
+        <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/imageprocessing/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Shortcodes</title>
+        <link>https://ink.magicoder.org/learn/contentmanagement/shortcodes/</link>
+        <pubDate>Tue, 28 Jan 2020 00:36:19 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/contentmanagement/shortcodes/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Frontmatter</title>
+        <link>https://ink.magicoder.org/learn/contentmanagement/frontmatter/</link>
+        <pubDate>Tue, 28 Jan 2020 00:36:14 +0900</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/contentmanagement/frontmatter/</guid>
+        <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>Markdown Syntax Guide</title>
+        <link>https://ink.magicoder.org/blog/markdown-syntax/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/blog/markdown-syntax/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Section</title>
+        <link>https://ink.magicoder.org/learn/contentmanagement/sections/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/learn/contentmanagement/sections/</guid>
+        <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Placeholder Text</title>
+        <link>https://ink.magicoder.org/blog/placeholder-text/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/blog/placeholder-text/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Emoji Support</title>
+        <link>https://ink.magicoder.org/blog/emoji-support/</link>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/blog/emoji-support/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
     
   </channel>
 </rss>

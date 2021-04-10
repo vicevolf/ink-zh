@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ink 中文文档 on ink.Magicoder.org - ink 中文指南</title>
+    <link>https://ink.magicoder.org/docs/</link>
+    <description>Recent content in Ink 中文文档 on ink.Magicoder.org - ink 中文指南</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 11 Jan 2020 14:09:21 +0900</lastBuildDate>
+    
+        <atom:link href="https://ink.magicoder.org/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>1. 基础 Basis</title>
+        <link>https://ink.magicoder.org/docs/basics/</link>
+        <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://ink.magicoder.org/docs/basics/</guid>
+        <description>Ink 中文文档 ink 是一门围绕标记纯文本展开的脚本语言，以生成互动脚本。 最简单的，它能让你写出一个 Choose Your Own 风格的故事，或有分支的对话树。但它真正的优势</description>
+      </item>
+      
+    
+  </channel>
+</rss>
