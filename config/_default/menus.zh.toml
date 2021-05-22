@@ -15,3 +15,9 @@
   name = "Blog"
   url = "blog"
   weight = 3
+
+[[main]]
+  identifier = "sponsors"
+  name = "支持我们"
+  url = "https://afdian.net/@volfclub"
+  weight = 4
