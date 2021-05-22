@@ -155,8 +155,8 @@ sections:
         image: images/home/6.png
         color: '#242729'
         button: 
-          name: 查看源码
-          link: https://github.com/inkle
+          name: 前往打赏
+          link: https://afdian.net/@volfclub
           size: large
           target: _blank
           color: 'white'
